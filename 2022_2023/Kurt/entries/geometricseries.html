@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+  </script>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<main id="main">
+  <article>
+    <!-- navbar -->
+    <section id="nav">
+      <b>
+      <a href="../index.html">Home</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../about.html">About</a>
+      </b>
+    </section>
+
+    <!-- header -->
+    <section id="head">
+      <h1 id="title">The geometric series and an application</h1>
+      <p id="title-caption"></p>
+      <figure id="img-div">
+        <img src="../images/geometricseries/eulersformula.png" alt="" id="image">
+        <figcaption id="img-caption"><i>Eulers Formula</i></figcaption>
+      </figure>
+    </section>
+
+    <!-- text about the geometric series -->
+    <section id="content">
+      <h2>Geometric Series</h2>
+      <p>
+        I was doing a little work on the geometric series in class today, and then found a nice application for it in math club. This post summarizes it. 
+        
+        In math class I dealt with the two formulas 
+        $$\sum_{k=0}^{n}r^k=\frac{1-r^{n+1}}{1-r}$$ and $$\sum_{k=0}^{\infty}r^k=\frac{1}{1-r},|r|&lt;1.$$ The first can be proved by induction. The inductionstep looks like this. $$\sum_{k=0}^{n+1}r^k=\sum_{k=0}^{n}r^k + r^{n+1}=\frac{1-r^{n+1}}{1-r} + r^{n+1} = \frac{1-r^{n+1} + (1-q)r^{n+1}}{1-r} = \frac{1-r^{n+1} + r^{n+1} - r^{n+2}}{1-r} $$
+        $$= \frac{1-r^{n+1} + r^{n+1} - r^{n+2}}{1-r} = \frac{1-r^{n+1} + r^{n+1} - r^{n+2}}{1-r} = \frac{1 - r^{n+2}}{1-r}.$$
+        
+        The second formula can then be proven with the first one like this. 
+        $$\sum_{k=0}^{\infty}r^k=\lim_{n\rightarrow \infty}\sum_{k=0}^{n}r^k = \lim_{n\rightarrow \infty} \frac{1-r^{n+1}}{1-r} = \frac{1-\lim_{n\rightarrow \infty} r^{n+1}}{1-r} \overset{|r|&lt;1}{=} \frac{1}{1-r}$$
+      </p>
+      <h2>Application</h2>
+      <p>
+        The formula that was covered in math club was the following $$\sum_{k=1}^{N}\sin(x + \frac{2k}{N}\pi)=0$$ 
+        We approached the proof first from an induction way of thinking, but that didn't really work out. I then came up with a way of proving it using the formula that I had proven in math class. For that, you have to transform the equation a bit.
+        
+        $$\sum_{k=1}^{N}\sin(x + \frac{2k}{N}\pi) = \sum_{k=1}^{N} \frac{1}{2i}(e^{ix + 2k\pi i/N} - e^{-ix - 2k\pi i/N})$$ 
+        $$= \frac{1}{2i}(\sum_{k=1}^{N} e^{ix}\sum_{k=1}^{N} e^{2k\pi i/N} - \sum_{k=1}^{N} e^{-ix}\sum_{k=1}^{N} e^{-2k\pi i/N})$$
+        
+        Now you really only have to prove that
+        
+        $$\sum_{k=1}^{N} e^{2k\pi i/N}=0$$ and $$\sum_{k=1}^{N} e^{-2k\pi i/N}=0$$
+        
+        Here you can use the geometric series, because
+        
+        $$\sum_{k=1}^{N} e^{2k\pi i/N} = \sum_{k=0}^{N-1} (e^{2\pi i/N})^k = \frac{1-(e^{2\pi i/N})^N}{1-e^{2\pi i/N}} = \frac{1-(e^{2\pi iN/N})}{1-e^{2\pi i/N}} $$
+        $$= \frac{1-(e^{2\pi iN/N})}{1-e^{2\pi i/N}}=\frac{1-1}{1-e^{2\pi i/N}} =\frac{0}{1-e^{2\pi i/N}} = 0$$ 
+        
+        But now 
+        $$\sum_{k=1}^{N} e^{-2k\pi i/N}=\overline{\sum_{k=1}^{N} e^{2k\pi i/N}}=\overline{0}=0$$
+        
+        and the formula is proven.
+      </p>
+      <p id="center"><b>Check out my <a id="tribute-link" href="https://github.com/KurtSchneider0" target="_blank">GitHub</a></b></p>
+      <button class="darkmode" id="button"><b>toggle darkmode</b></button>
+    </section>
+  </article>
+</main>
+</body>
+<footer>
+  <!-- javascript files -->
+  <script src="../javascript/jquery/jquery.js"></script>
+  <script src="../javascript/cookies.js"></script>
+  <script src="../javascript/darkmode.js"></script>
+</footer>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+  </script>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<main id="main">
+  <article>
+    <!-- navbar -->
+    <section id="nav">
+      <b>
+      <a href="../index.html">Home</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../about.html">About</a>
+      </b>
+    </section>
+
+    <!-- header -->
+    <section id="head">
+      <h1 id="title">Using the Nasa Api</h1>
+      <figure id="img-div">
+        <img src="src" alt="" class="image">
+        <i><figcaption id="img-caption">Astronomy picture of the date</figcaption></i>
+      </figure>
+    </section>
+
+    <!-- text about the nasa api -->
+    <section id="content">
+      <h2>The astronomy picture of the date</h2>
+      <p>
+        The picture at the top of this article is the so-called astronomy picture of the date.
+        This picture, its description, author and other things can be retrieved using the Nasa Api.
+        The endpoint for this is "https://api.nasa.gov/planetary/apod?api_key=". 
+        You aren't required to get an Api-Key, because you can use the key "DEMO_KEY". Just keep in mind, that the number of queries per hour is limited to 30 requests per IP address per hour.
+        The retrieved data will look like the following snippet.
+<pre class="codeblock">
+{
+  "copyright":"Goran Strand",
+  "date":"2022-12-21",
+  "explanation":"Happy Solstice! Today is the December solstice, marking an astronomical beginning of summer in the southern hemisphere and winter in the north. On its yearly trek through planet Earth's skies, at this solstice the Sun reaches its southern most declination, 23.5 degrees south, at 21:48 UTC. About 4 days ago the Sun was near this seasonal southern limit and so only just above the horizon at local noon over Ostersund in central Sweden. This view looking over the far northern lakeside city finds the midday Sun with a beautiful solar ice halo. Naturally occurring atmospheric ice crystals can produce the tantalizing halo displays, refracting and reflecting the sunlight through their hexagonal geometry.  Still, with the Sun low and near the horizon in the clear sky, likely sources of the ice crystals producing this intense halo are snow cannons. Operating at a local ski area, the snowmaking machines create a visible plume at the top of the nearby island Froson toward the right side of the panorama.",
+  "hdurl":"https://apod.nasa.gov/apod/image/2212/GS_20221217_Solhalo_Pan_v3.jpg",
+  "media_type":"image",
+  "service_version":"v1",
+  "title":"Sun Halo at Sixty-three Degrees North",
+  "url":"https://apod.nasa.gov/apod/image/2212/GS_20221217_Solhalo_Pan_v3_1100.jpg"
+}
+</pre>
+        Here is an example way to retrieve this data using javascript and changing the image from class "image" to the astronomy picture of the date.
+<pre class="codeblock">
+async function fetchapod() {
+  const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+  const response = await fetch(url);
+  return await response.json();
+}
+
+fetchapod().then((data) => {
+  $(".image").attr("src", data.url);
+})
+</pre>
+      </p>
+      <h2>Asteroids</h2>
+      <div>
+        <p>
+          You can also get asteroids near earth and data about them from Nasa's Api. 
+          The query for it is "https://api.nasa.gov/neo/rest/v1/feed?start_date=&lt;date&gt;&api_key=DEMO_KEY".
+          The date placeholder has to be replaced with the starting date for the asteroid search.
+          Here is a code example that inserts 5 random asteroids from that query into a table.
+        </p>
+<pre class="codeblock">
+async function fetchasteroids() {
+  let date = new Date();
+  date = date.toISOString().split('T')[0];
+  const url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + date + "&api_key=DEMO_KEY";
+  const response = await fetch(url);
+  const data = await response.json();
+  const shuffled = data.near_earth_objects[date].sort(() => 0.5 - Math.random()); 
+  return shuffled.slice(0, 5);
+}
+
+fetchasteroids().then((data) => {
+  var content ="";
+  for(i=0; i&lt;5; i++) {
+      content += "&lt;tr>" + 
+      "&lt;td>" + data[i].name + "&lt;/td>" +
+      "&lt;td>" + data[i].estimated_diameter.kilometers.estimated_diameter_min + " - " + data[i].estimated_diameter.kilometers.estimated_diameter_max + "&lt;/td>" +
+      "&lt;td>" + data[i].close_approach_data[0].relative_velocity.kilometers_per_hour +  "&lt;/td>" +
+      "&lt;td>" + data[i].close_approach_data[0].miss_distance.kilometers + "&lt;/td>" +
+      "&lt;/tr>"
+  }
+
+  $("#asteroids").append(content)
+})
+</pre>
+        <table id="asteroids">
+          <tr>
+            <th>Name</th>
+            <th>Diameter</th>
+            <th>Velocity</th>
+            <th>Miss distance</th>
+          </tr>
+        </table>
+      </div>
+      <h3>Mars Rover Photos</h3>
+      <div>
+        <p>
+          You are also able to get photos from mars rovers. 
+          The endpoint for them is "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY". 
+          Here is a code example that lists those images
+        </p>
+<pre class="codeblock">
+async function fetchpictures() {
+  const url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=IKGrfkMudHAQCa2HSYuwFhNHewoFWLbusyJFXE7W";
+  const response = await fetch(url);
+  const data = await response.json();
+  const shuffled = data.photos.sort(() => 0.5 - Math.random()); 
+  return shuffled.slice(0, 5);
+}
+
+fetchpictures().then((data) => {
+  var content ="";
+  for(i=0; i&lt;5; i++) {
+      content += "&lt;img src=" + data[i]["img_src"] + " width=250>&lt;br>"
+  }
+
+  $("#roverphotos").append(content)
+})
+
+</pre>
+        <div id="roverphotos"></div>
+      </div>
+      <p id="center"><b>Check out my <a id="tribute-link" href="https://github.com/KurtSchneider0" target="_blank">GitHub</a></b></p>
+      <button class="darkmode" id="button"><b>toggle darkmode</b></button>
+    </section>
+  </article>
+</main>
+</body>
+<footer>
+  <!-- javascript files -->
+  <script src="../javascript/jquery/jquery.js"></script>
+  <script src="../javascript/cookies.js"></script>
+  <script src="../javascript/darkmode.js"></script>
+  <script src="../javascript/nasaapi.js"></script>
+</footer>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+  </script>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<main id="main">
+  <article>
+    <!-- navbar -->
+    <section id="nav">
+      <b>
+      <a href="../index.html">Home</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../about.html">About</a>
+      </b>
+    </section>
+
+    <!-- header -->
+    <section id="head">
+      <h1 id="title">Quantum Computing</h1>
+      <figure id="img-div">
+        <img src="../images/quantumcomputing/quantumcircuit.png" alt="" id="image">
+        <figcaption id="img-caption"><i>Quantum Circuit</i></figcaption>
+      </figure>
+    </section>
+
+    <!-- text about quantum computing -->
+    <section id="content">
+      <h2>Basics</h2>
+      <p>
+        This blog article focuses on the implementation of quantum algorithms. I will only explain the basics a little bit. For more information on those, you can watch the lecture Quantum Computing for Computer Scientists.
+        
+        Quantum Computing uses a concept called the qubit. The qubit represents the concept of a bit being in superposition. The formula for it is
+        
+        $$
+        | q \rangle = \begin{pmatrix}\alpha\\\beta\end{pmatrix}.
+        $$
+        
+        $\alpha$ and $\beta$ are complex numbers and are the probabilities of $|q\rangle$ being the bit $0$ and $1$ respectively. Thus, 
+
+        $$
+        | 0 \rangle = \begin{pmatrix}1\\0\end{pmatrix},
+        | 1 \rangle = \begin{pmatrix}0\\1\end{pmatrix}.
+        $$
+        
+        To manipulate these qubits accurately, similar as in Classical Computing, matrices are used. Those matrices will then be multiplied with the qubit to get the result. The four basic operations of Classical Computing are constant-0, constant-1, identy and negation.
+        The following matrices represent them in Quantum Computing.
+        
+        $$
+        \textbf{0} = \begin{pmatrix}1 & 1\\ 0 & 0\end{pmatrix}, \textbf{1}=\begin{pmatrix}0 & 0\\ 1 & 1\end{pmatrix}, \textbf{I} \begin{pmatrix}1 & 0\\ 0 & 1\end{pmatrix}, \textbf{X} =\begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}
+        $$
+        
+        Another important operation that is unique to Quantum Computing is the Hadamard gate. It puts a $|0\rangle$ or $|1\rangle$ qubit into equal superposition. The bit is then equal as probable to be $|0\rangle$ or $|1\rangle$ when measured.
+
+        $$
+        \textbf{H}=\begin{pmatrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}\end{pmatrix}
+        $$
+        
+        Until now we have only discussed single qubits but in Classical Computing more bits are needed to represent more numbers. For example 
+
+        $101_2=5_{10}$
+        
+        In Quantum Computing, they are made with the tensor product. That is defined by
+
+        $$
+        | q\otimes p \rangle = | q\rangle \otimes  |p \rangle  =  \begin{pmatrix}\alpha_q\\\beta_q\end{pmatrix}\otimes \begin{pmatrix}\alpha_p\\\beta_p\end{pmatrix}
+        $$
+        
+        $$
+        \begin{pmatrix}\alpha_q \begin{pmatrix}\alpha_p\\\beta_p\end{pmatrix} \\\beta_q\begin{pmatrix}\alpha_p\\\beta_p\end{pmatrix}\end{pmatrix}
+        =\begin{pmatrix}\alpha_q \alpha_p\\ \alpha_q\beta_p \\\beta_q\alpha_p\\\beta_q \beta_p\end{pmatrix}
+        $$
+        
+        For example 
+        
+        $$
+        |01\rangle = \begin{pmatrix}0\\ 1 \\0\\0\end{pmatrix}
+        $$
+        
+        Another operation that is used on a 2-Qubit-System is the controlled not gate. The first bit is called the control bit and the second one the target bit. If the control bit is $1$, the target bit is flipped. If not, nothing happens.
+
+        $$
+        \textbf{CNOT}=\begin{pmatrix} 1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0\end{pmatrix}
+        $$
+        
+        This matrix is multiplied by a 2-Qubit-System. For example, with $|01\rangle$
+      </p>
+      <h2> Implementations</h2>
+      <h3> Random bit generator</h3>
+      <div>
+        <p>
+          Q# is an F#-inspired language that helps simulate quantum algorithms.
+          With this language we are able to code a simple random bit generator.
+          First we will initialize a qubit state $|0\rangle$. Then we will transform that qubit by using the Hadamard gate and multiplying it with the qubit and then measure it to get $|0\rangle$ or $|1\rangle$ with equal probability. This is implemented in the following code.
+<pre class="codeblock">
+namespace Qrng {
+    open Microsoft.Quantum.Convert;
+    open Microsoft.Quantum.Math;
+    open Microsoft.Quantum.Measurement;
+    open Microsoft.Quantum.Canon;
+    open Microsoft.Quantum.Intrinsic;
+    
+    operation RandomBit() : Result {
+        use q = Qubit();
+        H(q);
+        return M(q);
+    }
+}</pre>
+          <h3>Deutsch Oracle</h3>
+          The Deutsch Oracle is a deterministic quantum algorithm to determine if a function $f: \{0,1\}\rightarrow \{0,1\}$ in a given blackbox is constant or balanced. It outputs $|01\rangle$ if the function is balanced and $|11\rangle$ if it's constant.
+
+
+          I am not going into detail exactly why or how it works, this is done in the talk that I linked to at the beginning. This time I will implement the algorithm not in Q#, but in IBM's Quantum Composer. This will allow me to run the program on an actual quantum computer. This is an example implementation, which checks if the negation operation is balanced.
+
+          <img id="image2" src="../images/quantumcomputing/deutschoracle.png"><br>
+
+          The output of this run on the quantum computer is the following. <br>
+
+          <img id="image2" src="../images/quantumcomputing/output.png">
+        </p>
+      </div>
+      <p id="center"><b>Check out my <a id="tribute-link" href="https://github.com/KurtSchneider0" target="_blank">GitHub</a></b></p>
+      <button class="darkmode" id="button"><b>toggle darkmode</b></button>
+    </section>
+  </article>
+</main>
+</body>
+<footer>
+  <!-- javascript files -->
+  <script src="../javascript/jquery/jquery.js"></script>
+  <script src="../javascript/cookies.js"></script>
+  <script src="../javascript/darkmode.js"></script>
+</footer>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+  </script>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<main id="main">
+  <article>
+    <!-- navbar -->
+    <section id="nav">
+      <b>
+      <a href="./index.html">Home</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./about.html">About</a>
+      </b>
+    </section>
+
+    <!-- header -->
+    <section id="head">
+      <h1 id="title">About me</h1>
+      <figure id="img-div">
+        <img src="./images/topology.png" alt="" id="image">
+      </figure>
+    </section>
+
+    <!-- text about who i am -->
+    <section id="content">
+      <h2>Who am I?</h2>
+      Hello! My name is Kurt Schneider and I am a programmer, mathematician, and physicist. I have always been fascinated by the intersection of these subjects and how they can be used to understand and solve problems in the world around us. In my free time, I enjoy learning about new technologies and concepts, and I am currently particularly interested in exploring the exciting field of quantum computing and topology. I am always eager to learn and grow, and if you want to collaborate on any project just contact me.
+      <p id="center"><b>Check out my <a id="tribute-link" href="https://github.com/KurtSchneider0" target="_blank">GitHub</a></b></p>
+      <button class="darkmode" id="button"><b>toggle darkmode</b></button>
+    </section>
+  </article>
+</main>
+</body>
+<footer>
+  <!-- javascript files -->
+  <script src="./javascript/jquery/jquery.js"></script>
+  <script src="./javascript/cookies.js"></script>
+  <script src="./javascript/darkmode.js"></script>
+</footer>
+</html>
