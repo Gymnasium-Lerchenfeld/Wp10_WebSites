@@ -1,0 +1,50 @@
+.first{
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;  
+    background-color: rgb(129, 169, 243);  
+}   
+
+#content{
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;  
+    background-color:white;  
+}   
+
+
+h2 {
+text-align: center; 
+color: rgb(237, 100, 200);  
+    }
+
+
+
+.middle {
+        text-align: center;   
+        }
+
+.ueberschrift {
+    color: rgb(134, 144, 147)
+
+}
+
+h5 {
+    text-align: center;
+    color: rgb(134, 144, 147)
+} 
+
+
+
+.myfont {
+    font-family: Helvetica, Sans-Serif;
+    text-align: center;
+    }
+
+.helvetica {
+    font-family: Helvetica, Sans-Serif;
+        }
+
+.back1 {
+background-image: url(https://img.freepik.com/fotos-premium/mesa-fondo-banner-noticias-ultima-hora-estudio-noticias_327072-657.jpg?w=2000);
+        }
