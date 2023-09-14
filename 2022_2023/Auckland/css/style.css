@@ -1,0 +1,102 @@
+body {
+   margin: 10px auto;
+   max-width: 80em;
+   font-family: 'Times New Roman', serif;
+   color: #000000;
+   line-height: 150%;
+}
+
+header,
+nav,
+main,
+article,
+section,
+footer {
+   border-radius: 0.3em 0.7em 0.3em 0.7em;
+   border: 1px solid;
+   padding: 15px;
+   margin: 10px;
+}
+
+header, main, footer {
+   background-color: rgb(211, 239, 249);
+   border-color: rgb(19, 138, 181);
+   /*    background: #F1F3F4;*/
+}
+
+nav {
+   background: rgb(255, 255, 255);
+   border-color: rgb(19, 138, 181);
+   text-align: center;
+   font-size: 1.2em;
+   color: rgb(19, 138, 181);
+}
+
+nav a {
+   text-decoration: none;
+}
+
+nav a:hover {
+   border-bottom: solid rgb(19, 138, 181) 2px;
+   font-weight: bold;
+}
+
+section {
+   background:#ffffff;
+   border-color: rgb(19, 138, 181);
+}
+#section1 {
+   min-height: 30em;
+}
+
+#section2 {
+   background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/179000/179003-North-Island.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   border: none;
+   text-shadow: 0.05em 0.05em 0.1em #494848;
+   color:rgb(19, 138, 181) ;
+   text-align: right;
+   font-size: larger;
+}
+
+article {
+   background: rgb(211, 239, 249);
+   border-color: rgb(211, 239, 249);
+   margin: 20px;
+}
+
+caption {
+   font-size: 1.2em;
+   font-weight: bold;
+   color: rgb(19, 138, 181);
+}
+
+table,th, td, tr {
+   border-style: solid;
+   border: thin solid #c1c0c0;
+   padding: 0.3em;
+   border-collapse: collapse;
+}
+ th{
+   background-color: rgb(211, 239, 249);
+   color: #494848;
+ }
+
+a,h1,h2{
+   color: rgb(19, 138, 181);
+   text-align: left;
+}
+
+#bild {
+   max-height: 27%;
+   max-width: 27%;
+}
+
+img{
+   max-width: 35%;
+   max-height: 35%;
+   box-shadow: #8a9da8 4px 4px 4px;
+   border-radius: 1em 1em 1em 1em;
+   border: none;
+}
