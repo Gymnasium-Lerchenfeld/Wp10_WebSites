@@ -1,0 +1,53 @@
+body {
+    margin: 10px auto;
+    max-width: 80em;
+    font-family: sans-serif;
+    color: #333333;
+}
+
+header,
+nav,
+main,
+article,
+section,
+aside,
+footer {
+    border-radius: 0px 0.5em 0.5em;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0px 0.5em 0.5em;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+header {
+    text-align: center;
+    color: #000000;
+    background-image: url("../images/Pfoten.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: #000000;
+    
+}
+body {
+
+    background-color: #d7d7d7; 
+    color: #000000;
+    text-align : center;
+}
+
+article {
+    background:#ffffff;
+    border-color:#000000;
+}
+ 
+footer {
+background-color: #aeaeae;
+color: #000000;
+border-color: #000000; 
+}
+
+    
+
