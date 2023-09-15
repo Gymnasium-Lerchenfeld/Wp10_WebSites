@@ -1,0 +1,110 @@
+body {
+    margin: 10px auto;
+    max-width: 80em;
+    font-family: sans-serif;
+    color: #ffffff;
+    
+}
+
+header,
+nav,
+main,
+article,
+section,
+aside,
+footer {
+    border-radius: 0.5em 0.5em 0.5em;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+header {
+    text-align: center;
+    color: c5c5c5;
+    background-color: #000000;
+    background-image: url("/images/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: #3d3737;
+    /*    background: #F1F3F4;*/
+}
+
+nav {
+    background: #060606;
+    border-color: #000000;
+    text-align: center;
+    word-spacing: 5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c5c5c5;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-align: center;
+}
+
+section {
+    background: #000000;
+    border-color: rgb(255, 255, 255);
+}
+
+main {
+    background: #000000;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+    margin-right: 0ex;
+}
+
+article {
+    color: #ffffff
+    background-color: #000000;
+    border-color: #ffffff;
+}
+
+aside {
+    background: #000000;
+    border-color: #8db243;
+}
+
+footer {
+    background: #000000;
+    border-color: #000000;
+    color: #ce1212;
+
+}
+
+ul class="list" {
+    color: #000000;
+    border-color #000000;
+    text- align: left;
+    padding: 10px;
+    margin: 10px
+}
+
+video::-webkit-media-controls-panel {display: none; opacity:1;}
+
+video: {
+    display: block;
+    background: 10em;
+    width:0em;
+    height:0em;
+    align-items: center;
+}
+
+#Farben_iPhone {
+    align-content:  ;
+}
+
+#NeuesDesign {
+    width: 30em;
+    height: 25em;
+}
+
+#Linkqasim {
+    color: white;
+}
