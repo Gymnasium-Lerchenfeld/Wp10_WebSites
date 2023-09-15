@@ -15,7 +15,7 @@ Students learnd HTML, CSS and simple tasks in JavaScript.
 * Formel 1 von Amelie Ballnus und Hannah Brandes
 * Musiksamples von Johannes Schürer und Jonas Otto
 * Schizophrenie von Leonie Frederike Werner und Fijona Sadiku
-* von Antonia Paula Ortmann und Emma Berenike Müller
+* Podcasts von Antonia Paula Ortmann und Emma Berenike Müller
 * von Jose Diogo Silva Lazaro und Paul Connor Delfs
 * von Lasse Wissing, Amade Federic Richard und Onno Martinius
 * von Hami Alasdair Gordon, Tim Haseloh
