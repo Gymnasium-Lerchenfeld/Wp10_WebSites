@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+header {
+    padding-left: 38%;
+    margin-bottom: 24px; 
+}
+
+nav div a{
+    margin: 15px;
+}
+
+
+
+.mitte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teaser{
+    width: 100%;
+    height: 300px;
+}
+
+#teaser img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media screen and (min-width: 800px){}
+    #teaser {
+        height: 600px;
+    }
+
+section{
+    max-width: 1200px;
+    padding-left: 24px;
+} 
+
