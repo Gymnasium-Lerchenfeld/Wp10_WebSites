@@ -1,23 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 html{
     height: 100%;
 }
 body{
     height: 100%;
-    background: radial-gradient(white);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #afafaf;   
 }
-nav{
-    height: 85px;
-    width: 100%;
-    background-color: white;
 
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.144);
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.144);
 }
 nav ul{
     float: right;
@@ -25,28 +19,12 @@ nav ul{
 nav ul li{
     float: left;
     list-style: none;
-    position: relative;
 }
 nav ul li a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-    color: #333;
+    color: #000000;
     text-decoration: none;
-    padding: 24px;
+    padding: 20px;
     display: block;
-}
-nav ul li ul{
-    display: none;
-    position: absolute;
-    background-color: grey;
-    padding: 7px;
-    border-radius: 0px 0px 12px 12px;
-}
-nav ul li:hover ul{
-    display: block;
-}
-nav ul li ul li a{
-    color: white;
-    padding: 16px 20px;
-    border-radius: 10px;
 }
