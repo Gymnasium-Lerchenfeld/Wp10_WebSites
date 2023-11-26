@@ -3,9 +3,21 @@
     <head>
         <link rel="stylesheet" href="css/styles.css">
         <meta charset="utf-8">
-        <title>Was ist Problematik an Podcast - Verschwörungstheorien</title>
+        <title>Zwei Kategorien</title>
     </head>
     <body>
+        <nav>
+            <ul>
+                <li> <a href="trueCrime.html">True Crime</a> </li>
+                <li><a href="buecher.html">Bücher</a> </li>
+            </ul>
+        </nav>
     </body>
-
+    <footer>
+    <p> hier geht es zurück zur
+        <a href="index.html">Startseite</a>
+        </p>
+         
+        <p>© 2023 by Em & An</p>
+    </footer>
 </html>
