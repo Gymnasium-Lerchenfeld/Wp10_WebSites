@@ -6,7 +6,6 @@ body{
     height: 100%;
     background-color: #afafaf;   
 }
-
 nav{
     height: 90px;
     width: 100%;
@@ -16,15 +15,22 @@ nav{
 nav ul{
     float: right;
 }
-nav ul li{
-    float: left;
-    list-style: none;
+nav li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+    position: relative;
 }
 nav ul li a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     color: #000000;
     text-decoration: none;
-    padding: 20px;
-    display: block;
+}
+nav ul li .active{
+    color: #afafaf;
+}
+nav img{
+    height: 90px;
+    position: absolute;
 }
