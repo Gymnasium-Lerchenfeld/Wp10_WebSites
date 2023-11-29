@@ -13,11 +13,5 @@
             </ul>
         </nav>
     </body>
-    <footer>
-    <p> hier geht es zurück zur
-        <a href="index.html">Startseite</a>
-        </p>
-         
-        <p>© 2023 by Em & An</p>
-    </footer>
+    
 </html>
