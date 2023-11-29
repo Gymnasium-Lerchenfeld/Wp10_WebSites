@@ -9,7 +9,7 @@ ul {
  
  /* Style the navbar */
  nav {
-  background-color: #333;
+  background-color: #B1BAD1;
  }
  
  /* Style the navbar links */
@@ -30,4 +30,15 @@ ul {
  .shoppingcart {
   float: right;
  }
+<<<<<<< HEAD
+
+ img {
+  width: 20mm;
+ }
+
+ .Logo {
+  width: 40mm;
+ }
+=======
 >>>>>>> 2eba743bc48be7bef6e61d187058e10736334361
+>>>>>>> 05392d83f36fd8eacea519f490b91fdfa1b3ac3e
