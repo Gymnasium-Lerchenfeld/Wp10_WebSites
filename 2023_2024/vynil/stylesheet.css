@@ -1,3 +1,33 @@
-#nav {
-  background-color: #8d9c00;
-}
+
+/* Remove default list styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ }
+ 
+ /* Style the navbar */
+ nav {
+  background-color: #333;
+ }
+ 
+ /* Style the navbar links */
+ li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ }
+ 
+ /* Change color on hover */
+ li a:hover {
+  background-color: #111;
+ }
+ 
+ /* Add a shopping cart image to the far right */
+ .shoppingcart {
+  float: right;
+ }
+>>>>>>> 2eba743bc48be7bef6e61d187058e10736334361
