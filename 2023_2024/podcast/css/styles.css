@@ -38,3 +38,9 @@ nav img{
 li a {
     color: #000000;
 }
+img {
+    height: 70px;
+    float: right;
+    display: block;
+    margin-right: 40px;
+}
