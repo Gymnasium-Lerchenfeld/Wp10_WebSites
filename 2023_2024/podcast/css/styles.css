@@ -35,3 +35,6 @@ nav img{
     height: 90px;
     position: absolute;
 }
+li a {
+    color: #000000;
+}
