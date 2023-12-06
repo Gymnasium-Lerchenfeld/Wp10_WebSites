@@ -50,10 +50,9 @@ nav img {
 .logosVonApps {
     height: 20%;
     width: 20%;
-    margin-right: 200px;
-    
+    margin-right: 200px;   
 }
-
+/* es in Prozent damit das Bild kleiner wird wenn der Bilschirm kleiner wird*/
 .podcastLogos {
     height: 10%;
     width: 10%;
