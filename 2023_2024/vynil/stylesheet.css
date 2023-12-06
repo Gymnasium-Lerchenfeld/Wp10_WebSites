@@ -62,4 +62,44 @@ ul {
   word-spacing: 50mm;
  }
 
- 
+ h1 {
+  font-family: Arial;
+  font-size: x-large;
+  color: #B1BAD1;
+  font-variant: small-caps;
+  text-align: center;
+  line-height: 200px;
+ }
+
+h3 {
+  font-family: Arial;
+  font-size: larger;
+  color: #B1BAD1;
+  text-align: center;
+  line-height: 2px;
+}
+
+p {
+  font-family: Arial;
+  font-size: medium;
+  color: #B1BAD1;
+  font-variant: small-caps;
+  line-height: 2px;
+  text-align: center;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  margin: 50px;
+  line-height: 2px;
+}
+
+table {
+  margin-left: 20px;
+}
+
+.shoppingimage {
+  width: 100px;
+  height: auto;
+}

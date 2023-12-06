@@ -31,14 +31,18 @@ nav ul li a{
 nav ul li .active{
     color: #afafaf;
 }
-nav img{
-    height: 90px;
-    position: absolute;
-}
+
 li a {
     color: #000000;
 }
 img {
     height: 70px;
     float: right;
+}
+
+.logosVonApps {
+    height: 10%;
+    width: 10%;
+    margin-right: 200px;
+    
 }
