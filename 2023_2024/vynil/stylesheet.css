@@ -1,6 +1,7 @@
 
 /* Remove default list styling */
 ul {
+  float: right;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,19 +12,22 @@ ul {
  nav {
   background-color: #B1BAD1;
  }
- 
+
  /* Style the navbar links */
- li a {
-  display: flex;
+ nav a {
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
  }
- 
+
  /* Change color on hover */
- li a:hover {
+ nav a:hover {
   background-color: #111;
+ }
+
+ li a {
+  display: flex;
  }
  
  /* Add a shopping cart image to the far right */
@@ -62,4 +66,44 @@ ul {
   word-spacing: 50mm;
  }
 
- 
+ h1 {
+  font-family: Arial;
+  font-size: x-large;
+  color: #B1BAD1;
+  font-variant: small-caps;
+  text-align: center;
+  line-height: 200px;
+ }
+
+h3 {
+  font-family: Arial;
+  font-size: larger;
+  color: #B1BAD1;
+  text-align: center;
+  line-height: 2px;
+}
+
+p {
+  font-family: Arial;
+  font-size: medium;
+  color: #B1BAD1;
+  font-variant: small-caps;
+  line-height: 2px;
+  text-align: center;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  margin: 50px;
+  line-height: 2px;
+}
+
+table {
+  margin-left: 20px;
+}
+
+.shoppingimage {
+  width: 100px;
+  height: auto;
+}
