@@ -35,9 +35,16 @@ nav ul li .active{
 li a {
     color: #000000;
 }
+
 img {
     height: 70px;
     float: right;
+}
+
+nav img {
+    height: 85px;
+    position: absolute;
+    margin-left: 20px;
 }
 
 .logosVonApps {
@@ -45,4 +52,9 @@ img {
     width: 10%;
     margin-right: 200px;
     
+}
+
+.podcastLogos {
+    height: 10%;
+    width: 10%;
 }
