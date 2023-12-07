@@ -5,7 +5,7 @@ html{
 }
 body{
     height: 100%;
-    background-color: #afafaf;   
+    background-color: #afafaf;  
 }
 nav{
     height: 90px;
@@ -65,3 +65,15 @@ nav img {
 .color-change-2:hover {
     color: #606060;
 }
+
+h1{
+    font-size: 2.7em;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding-left: 5%;
+}
+   
+    
