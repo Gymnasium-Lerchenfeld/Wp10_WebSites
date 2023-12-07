@@ -5,7 +5,7 @@ html{
 }
 body{
     height: 100%;
-    background-color: #afafaf;  
+    background-color: #afafaf; 
 }
 nav{
     height: 90px;
@@ -73,7 +73,10 @@ h1{
 
 p {
     text-align: justify;
-    padding-left: 5%;
 }
    
+section {
+    padding-left: 5%;
+    padding-right: 5%;
+}
     
