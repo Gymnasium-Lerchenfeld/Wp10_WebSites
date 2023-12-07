@@ -57,3 +57,7 @@ nav img {
     height: 10%;
     width: 10%;
 }
+
+.color-change:hover {
+    color: #afafaf;
+}
