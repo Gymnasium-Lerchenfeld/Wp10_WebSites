@@ -1,6 +1,7 @@
 
 /* Remove default list styling */
 ul {
+  float: right;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,19 +12,22 @@ ul {
  nav {
   background-color: #B1BAD1;
  }
- 
+
  /* Style the navbar links */
- li a {
-  display: flex;
+ nav a {
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
  }
- 
+
  /* Change color on hover */
- li a:hover {
+ nav a:hover {
   background-color: #111;
+ }
+
+ li a {
+  display: flex;
  }
  
  /* Add a shopping cart image to the far right */
