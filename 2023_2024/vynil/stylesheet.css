@@ -1,109 +1,84 @@
+/* Navigation Bar Styles */
 
-/* Remove default list styling */
-ul {
-  float: right;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
- }
- 
- /* Style the navbar */
- nav {
+nav {
   background-color: #B1BAD1;
- }
-
- /* Style the navbar links */
- nav a {
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
- }
-
- /* Change color on hover */
- nav a:hover {
-  background-color: #111;
- }
-
- li a {
-  display: flex;
- }
- 
- /* Add a shopping cart image to the far right */
- .shoppingcart {
-  float: right;
- }
-
- img {
-  width: 20mm;
- }
-
- .Logo {
-  width: 40mm;
- }
-
- .search {
-  width: 3.5mm;
- }
-
- button {
-  background-color: #B1BAD1;
- }
-
- form {
-  background-color: #B1BAD1;
-  width: 300px;
-  height: 44px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: 10px;
  }
 
  ul {
-  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  word-spacing: 50mm;
+ }
+
+ li {
+  margin-right: 20px;
+ }
+
+ a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: larger;
+ }
+
+ a:hover {
+  color: black;
+ }
+
+ /* Image Styles */
+
+ .Logo {
+  width: auto;
+  height: 24px;
+  margin-bottom: 10px;
+ }
+
+ .shoppingimage {
+  width: auto;
+  height: 50px;
+  margin-bottom: 10px;
+ }
+
+ /* Styles for the product overview table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+ }
+ 
+ 
+ thead th {
+  padding: 5px;
+  text-align: center;
+ }
+ 
+ tbody {
+  background-color: #f2f2f2;
+ }
+ 
+ tbody td {
+  padding: 15px;
+  text-align: center;
+ }
+ 
+ tbody img {
+  width: 500px;
+  height: auto;
+ }
+ 
+ h3 {
+  margin: 10px 0;
+ }
+ 
+ p {
+  margin: 0;
  }
 
  h1 {
-  font-family: Arial;
-  font-size: x-large;
+  margin-top: 20px;
+  padding: 5px;
   color: #B1BAD1;
-  font-variant: small-caps;
-  text-align: center;
-  line-height: 200px;
  }
-
-h3 {
-  font-family: Arial;
-  font-size: larger;
-  color: #B1BAD1;
-  text-align: center;
-  line-height: 2px;
-}
-
-p {
-  font-family: Arial;
-  font-size: medium;
-  color: #B1BAD1;
-  font-variant: small-caps;
-  line-height: 2px;
-  text-align: center;
-}
-
-img {
-  width: 500px;
-  height: auto;
-  margin: 50px;
-  line-height: 2px;
-}
-
-table {
-  margin-left: 20px;
-}
-
-.shoppingimage {
-  width: 100px;
-  height: auto;
-}
