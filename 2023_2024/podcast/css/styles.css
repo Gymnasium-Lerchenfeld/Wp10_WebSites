@@ -74,6 +74,10 @@ h1{
     text-align: center;
     background-color: rgb(255, 255, 255);
     border-radius: 0.5em;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 p {
@@ -87,5 +91,31 @@ section {
     
 h3 {
     font-size:1.5em; 
-
 }
+
+section {
+    background-color: rgb( 255, 255, 255);
+    border-radius: 1em;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    
+}
+
+
+footer {
+    background-color: rgb( 255, 255, 255);
+    border-radius: 1em;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;  
+}
+
+.links {
+    color: black;
+}
+ .links:hover {
+    color: #606060;
+ }
