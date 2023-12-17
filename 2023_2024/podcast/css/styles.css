@@ -38,9 +38,6 @@ nav ul li .active{
 li a {
     color: #000000;
 }
-table tr td a{
-    color: #000000;
-}
 img {
     height: 70px;
     float: right;
@@ -97,7 +94,7 @@ footer {
     padding-bottom: 0.1%;  
 }
 .links {
-    color: rgb(97, 97, 97);
+    color: #000000;
 }
 /* Eigentlich wollte ich das zur class color change hinzufügen, jedoch ging das nicht, weil dann der Link immer noch blau gewesen wär und man kann keine zwei class machen deshalb ist das jetzt eine neue class */
  .links:hover {
