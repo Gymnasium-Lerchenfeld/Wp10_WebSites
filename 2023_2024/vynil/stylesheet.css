@@ -1,7 +1,7 @@
 /* Navigation Bar Styles */
 
 nav {
-  background-color: #0f4a39;
+  background-color: #ced4da;
  }
 
  /* Style the navbar links */
@@ -15,7 +15,7 @@ nav {
 
  /* Change color on hover */
  nav a:hover {
-  background-color: #111;
+  background-color: #adb5bd;
  }
 
  /* Add a shopping cart image to the far right */
@@ -31,6 +31,23 @@ nav {
   width: 40mm;
  }
 
+ .search {
+  width: 3.5mm;
+ }
+
+ button {
+  background-color: #B1BAD1;
+ }
+
+ form {
+  background-color: #B1BAD1;
+  width: 300px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+ }
 
  ul {
   list-style: none;
@@ -53,7 +70,7 @@ nav {
  }
 
  a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
  }
 
  /* Image Styles */
@@ -105,7 +122,7 @@ table {
  h1 {
   margin-top: 20px;
   padding: 5px;
-  color: #0f4a39;
+  color: #4a4e69;
  }
 
  body {
@@ -143,7 +160,7 @@ table {
  .Kundenbewertung p:first-child {
   margin-bottom: 10px;
  }
-
+ 
  .Kundenbewertung p:last-child {
   margin-top: 0;
  }
@@ -151,42 +168,87 @@ table {
  /* Container Styles */
 
 .container {
+
   max-width: 1200px;
+
   margin: 0 auto;
+
   padding: 0 20px;
+
 }
+
 
 /* Section Styles */
 
 .features .Karte {
+
   padding: 60px 0;
+
   background-color: #f7f7f7;
+
 }
+
 
 /* Heading Styles */
 
 h2 {
+
   font-size: 2.5rem;
+
   margin-bottom: 20px;
+
 }
+
 
 /* Text Styles */
 
 p {
+
   font-size: 1.125rem;
+
   margin-bottom: 20px;
+
 }
 
 
 ul {
+
   list-style-type: none;
+
 }
 
 
 li {
+
   font-size: 1.125rem;
+
   margin-bottom: 10px;
+
 }
+ 
+ form {
+  margin-top: 20px;
+ }
+ 
+ input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+ }
+ 
+ button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+ }
+ 
+ button[type="submit"]:hover {
+  background-color: #666;
+ }
 
  .features, .testimonials {
   background-color: #ffffff;
@@ -200,7 +262,7 @@ li {
  }
 
  .features h2 {
-  background-color: #3b6430;
+  background-color: #adb5bd;
   padding: 10px 20px;
   margin-bottom: 30px;
   color: #eee;
@@ -212,7 +274,7 @@ li {
  }
 
  .Kundenbewertung {
-  background-color: #c6c18e;
+  background-color: #6c757d;
   padding: 20px;
   margin-bottom: 30px;
   border-radius: 5px;
@@ -220,7 +282,7 @@ li {
 
  #features {
   width: 100%;
-  background-color: #3b6430;
+  background-color: #adb5bd;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -242,19 +304,19 @@ li {
 
  #testimonials {
   width: 100%;
-  background-color: #6b7e4d;
+  background-color: #adb5bd;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
  }
 
 #testimonials h2 {
-  background-color: #6b7e4d;
+  background-color: #adb5bd;
   color: #eee;
 }
 
 #productLink {
-  background-color: #c6c18e;
+  background-color: #adb5bd;
   width: 100%;
   text-align: center;
  }
@@ -264,7 +326,7 @@ li {
  }
 
  #Karte {
-  background-color: #e0e0c7;
+  background-color: #adb5bd;
   margin-bottom: 10px;
  }
 
@@ -301,36 +363,7 @@ li {
   color:rgb(0, 0, 0)
  }
 
-
-form {
-  margin-top: 20px;
- }
- 
- input[type="text"], input[type="email"], textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
- }
- 
- button[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
- }
- 
- button[type="submit"]:hover {
-  background-color: #666;
+ a {
+  color: black;
  }
 
- .email {
-  color: #666;
- }
-
-.email:hover {
-  color: #111;
-}

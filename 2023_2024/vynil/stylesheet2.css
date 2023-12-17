@@ -1,7 +1,7 @@
  /* Navigation Bar Styles */ 
 
  nav {
-    background-color: #0f4a39;
+    background-color: #ced4da;
    }
   
    /* Style the navbar links */
@@ -15,7 +15,7 @@
   
    /* Change color on hover */
    nav a:hover {
-    background-color: #111;
+    background-color: #adb5bd;
    }
   
    /* Add a shopping cart image to the far right */
