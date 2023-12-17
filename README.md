@@ -19,5 +19,6 @@ Students learnd HTML, CSS and simple tasks in JavaScript.
 * Formel 1 von Antonia Paula Ortmann und Emma Berenike Müller
 * Tesla von Jose Diogo Silva Lazaro und Paul Connor Delfs
 * Handballshop von Lasse Wissing, Amade Federic Richard und Onno Martinius
+* Echotunes von Johannes Schürer
 * von Hami Alasdair Gordon, Tim Haseloh
-* von ...
+* Vynil von ...

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--die Seite müsste soweit fertg sein oder du willst noch was am Design ändern-->
 <html lang="de">
     <head>
         <link rel="stylesheet" href="css/styles.css">
@@ -19,52 +20,60 @@
         </nav>
         <!--Der Bereich im nav Element ist die Navigationsleiste, die im css näher beschrieben ist. Sie ermöglicht es dem Besucher
             der Website zwischen den Seiten zu wechseln-->
+        <!--Über die class active wird im css die Seite beschrieben auf der man sich gerade befindet. Für den Besucher ist 
+            in der Navigationsleiste die gerade geöffnete Seite in einer hellgrauen Schrift, was sie von den anderen Seiten unterscheidet, 
+            zu erkennen.-->
+        <!--es wäre schlauer gewesen die Navigationsleiste mit javascript zu machen jedoch hatten wir das nicht im Unterricht 
+            und wir haben das nicht verstanden-->
         <article>
-                <h1>Allgemeines</h1>
+            <h1>Allgemeines</h1>
                 
             <section> 
                 <h3>Was sind Podcasts</h3>
                 <h4>Definition</h4>
                 <p>
-                    Der Begriff Podcast setzt sich aus zwei Teilen zusammen: Zum einen aus der englischen Abkürzung „pod“, 
-                    was für „playable on demand“ ("spielbar auf Abruf") steht und zum anderen aus „cast“ von dem Wort „Broadcast“, 
-                    was Rundfunksendung bedeutet. <br />
-                    Ein Podcast ist eine Audio-Datei, welche man zeitunabhängig hören kann, indem man sie herunterlädt oder direkt hört. 
-                    Dabei ist geht der Inhalt von Nachrichten über Influencer/Celebrities über True Crime und vieles mehr. </p>
-                <p> 
-                    Ein Podcast ist eine Audio-Datei, welche man zeitunabhängig hören kann, indem man sie herunterlädt oder direkt hört. 
-                    Dabei ist geht der Inhalt von Nachrichten über Influencer/Celebrities über True Crime und vieles mehr. </p>
-                <p>
-                    Ein Podcast ist eine Serie von digitalen Audiodateien, die über das Internet verbreitet und von Nutzern 
-                    heruntergeladen oder gestreamt werden können. Diese Audiodateien, oft Episoden genannt, decken eine Vielzahl 
-                    von Themen ab, darunter Nachrichten, Bildung, Unterhaltung, Geschichten, Interviews und vieles mehr. 
-                    Podcasts sind in der Regel abonnierbar, was es Hörern ermöglicht, automatisch Benachrichtigungen 
-                    über neue Episoden zu erhalten. Sie können auf verschiedenen Plattformen, wie Apple Podcasts, 
-                    Spotify oder Google Podcasts, gehört werden, und ermöglichen es den Produzenten, Inhalte unabhängig zu erstellen 
-                    und einem globalen Publikum zugänglich zu machen. </p> 
-                <!--wir müssen uns noch auf eine Definition einigen weil jetzt sind das unterschiedliche-->
-    
+                    Ein Podcast ist eine innovative Form der digitalen Unterhaltung, bestehend aus einer Reihe von Audioinhalten, 
+                    die über das Internet verbreitet und von Hörern heruntergeladen oder gestreamt werden können. Diese Audioformate, 
+                    auch als Episoden bezeichnet, bieten eine breite Palette von Themen, die von Nachrichten und Bildung über Unterhaltung
+                    bis hin zu Geschichten und Interviews reichen. <br>
+                    Die Begriffsprägung "Podcast" setzt sich aus zwei Komponenten zusammen: "pod" steht für "playable on demand" (spielbar auf Abruf), 
+                    während "cast" von "Broadcast" stammt, was auf Rundfunksendungen hinweist. Dies spiegelt die Flexibilität wider, 
+                    dass Podcasts zeitunabhängig gehört werden können, sei es durch den Download oder das direkte Streaming. <br>
+                    Die Vielfalt der Podcast-Inhalte ist beeindruckend und reicht von traditionellen Nachrichtenformaten über Diskussionen 
+                    von Influencern und Celebrities bis hin zu fesselnden True Crime-Geschichten und vielem mehr. Diese digitale Audiorevolution
+                     ermöglicht es Produzenten, unabhängig Inhalte zu erstellen und einem globalen Publikum zugänglich zu machen. <br>
+                    Ein charakteristisches Merkmal von Podcasts ist ihre Abonnierbarkeit, die es Hörern ermöglicht, automatische Benachrichtigungen 
+                    über neue Episoden zu erhalten. Plattformen wie Apple Podcasts, Spotify oder Google Podcasts dienen als Zugangsportale, auf denen 
+                    Hörer ihre favorisierten Podcasts entdecken und abspielen können. Dies schafft eine demokratische Plattform für Inhalte, auf der 
+                    sowohl etablierte als auch aufstrebende Stimmen gehört werden können. <br>
+                    Insgesamt repräsentiert der Podcast ein facettenreiches Medium, das die Art und Weise, wie wir Geschichten hören 
+                    und Informationen konsumieren, revolutioniert hat.
+                </p>  
             </section>
-                 <br>
+                 <br> 
+                 <!--also man hätte diese Abstände zwischen den Abschnitten bestimmt hübscher als mit br machen können, 
+                    aber ich hab nichts geignetes gefunden-->
             <section>
             <h3>Wo kann man Podcast hören?</h3>
                 <table>
                     <th>Die beliebtesten Apps:</th> <th>Das App-Icon dazu:</th>
                     <tr>
-                        <td style="width: 70%;"> 1. Apple Podcasts: </br>
-                            <!--width: 70%, da ansonsten der Text nixht in eine Spalte passt bzw. umbricht-->
+                        <td style="width: 70%;"><a class="color-change" href="https://www.apple.com/de/apple-podcasts/">1. Apple Podcasts: </a></br>
+                            <!--width: 70%, da ansonsten der Text nicht in eine Spalte passt bzw. umbricht-->
                             Für iOS-Benutzer ist dies eine der bekanntesten Plattformen, auf der du Podcasts abonnieren und hören kannst.</td> 
                         <td><img src="images/PodcastAppsLogo/ApplePodcastLogo.jpg" class="logosVonApps"></td> 
                             <!--Mit der class haben wir alle Logos in css gleich definieren können, ohne uns zu wiederholen-->
                     </tr>
                     <tr>
-                        <td> 2. Spotify: </br>
-                            Diese Plattform bietet eine breite Auswahl an Podcasts, und du kannst auch Musik hören. Spotify ist auf verschiedenen Betriebssystemen verfügbar.</td> 
+                        <td><a class="color-change" href="https://open.spotify.com/intl-de?">2. Spotify: </a></br>
+                            Diese Plattform bietet eine breite Auswahl an Podcasts, und du kannst auch Musik hören. 
+                            Spotify ist auf verschiedenen Betriebssystemen verfügbar.</td> 
                         <td><img src="images/PodcastAppsLogo/SpotifyLogo.jpg" class="logosVonApps"></td>
                     </tr>
                     <tr>
-                        <td> 3. Google Podcasts: </br>
-                            Für Android-Nutzer bietet Google Podcasts eine benutzerfreundliche Möglichkeit, Podcasts zu entdecken und anzuhören. </td> 
+                        <td><a class="color-change" href="https://podcasts.google.com/"> 3. Google Podcasts: </a></br>
+                            Für Android-Nutzer bietet Google Podcasts eine benutzerfreundliche Möglichkeit, 
+                            Podcasts zu entdecken und anzuhören. </td> 
                         <td><img src="images/PodcastAppsLogo/GooglePodcastLogo.jpg" class="logosVonApps"></td>
                     </tr>
                     <tr> 
@@ -74,7 +83,8 @@
                     </tr>
                     <tr>
                         <td> 5. Stitcher: </br>
-                            Diese Plattform ermöglicht das Streaming von Podcasts und bietet Funktionen wie persönliche Playlists und Empfehlungen.</td> 
+                            Diese Plattform ermöglicht das Streaming von Podcasts und bietet Funktionen 
+                            wie persönliche Playlists und Empfehlungen.</td> 
                         <td><img src="images/PodcastAppsLogo/SticherLogo.jpg" class="logosVonApps"></td>   
                     </tr> 
                     <tr>
@@ -84,28 +94,29 @@
                     </tr>
                     <tr>
                         <td> 7. Pocket Casts: </br>
-                            Eine plattformübergreifende App, die eine benutzerfreundliche Oberfläche und Funktionen wie automatische Downloads bietet.</td> 
+                            Eine plattformübergreifende App, die eine benutzerfreundliche Oberfläche und Funktionen 
+                            wie automatische Downloads bietet.</td> 
                         <td><img src="images/PodcastAppsLogo/PocketCastslogo.jpg" class="logosVonApps"></td> 
                     </tr>
                     <tr>
                         <td> 8. Castbox: </br>
-                            Diese App bietet eine umfangreiche Bibliothek von Podcasts, durchsuchbare Episoden und personalisierte Empfehlungen.</td> 
+                            Diese App bietet eine umfangreiche Bibliothek von Podcasts, durchsuchbare Episoden 
+                            und personalisierte Empfehlungen.</td> 
                         <td><img src="images/PodcastAppsLogo/CastboxLogo.jpg" class="logosVonApps"></td>  
                     </tr>
                 </table>
-                <!--Mithilfe der Tabelle konnten wir unsere Bilder in die gleiche Zeile wie der Text einrücken-->
-                
+                <!--Mithilfe der Tabelle konnten wir unsere Bilder in die gleiche Zeile wie der Text einrücken-->  
             </section>
-            <p></p>
+            <br>
             <section>
             <h3>Wer macht Podcast?</h3> 
     
                 <p>JEDER DER PODCAST MACHEN MÖCHTE. </p>
-                    <p> Podcast können von jedem gemacht werden. Darunter können sich dann Einzelpersonen, Gruppen, Unternehmen, 
+                    <p>
+                         Podcast können von jedem gemacht werden. Darunter können sich dann Einzelpersonen, Gruppen, Unternehmen, 
                         Medienunternehmen, Organisationen oder andere befinden. Die Leute die Podcast machen werden „Podcaster“ genannt. 
                         Dabei kümmert sich diese Podcasterin oder dieser Podcaster in der Regel um die Content- Planung 
-                        (z.B.: Redaktionsplan), die inhaltliche Vorbereitung und die Ausarbeitung der Content-Idee. </br>
-        
+                        (z.B.: Redaktionsplan), die inhaltliche Vorbereitung und die Ausarbeitung der Content-Idee. <br>
                         Podcasts werden von einer vielfältigen Gruppe von Menschen und Organisationen erstellt. Unabhängige Podcaster 
                         sind oft Einzelpersonen oder kleine Gruppen, die sich leidenschaftlich für ein Thema interessieren, 
                         sei es True Crime, Technologie, Unterhaltung oder Bildung. 
@@ -116,29 +127,30 @@
                         während Non-Profit-Organisationen Podcasts nutzen, um ihre Botschaft zu verbreiten und 
                         Aufmerksamkeit für ihre Anliegen zu gewinnen. Diese Vielfalt an Produzenten trägt dazu bei, 
                         dass Podcasts eine breite Palette von Inhalten abdecken, von Bildung und Unterhaltung 
-                        bis hin zu tiefgehenden Gesprächen über verschiedenste Themen. </p>    
-            </section>
-                
-            <p> </p>
-    
+                        bis hin zu tiefgehenden Gesprächen über verschiedenste Themen. 
+                    </p>    
+            </section>    
+            <br>
             <section>
                 <h3>Viele Podcasts im Überblick (Spotify): </h3>
                     <li> Bildung </li>
                     <li>Business </li>
                     <li>Comedy </li> 
                     <li>Dokus & Reportagen </li>
-                    <li><a class="color-change-2" href="buecher.html">Fiktion (Bücher)</a> </li>
+                    <li><a class="color-change" href="buecher.html">Fiktion (Bücher)</a> </li>
                     <li>Freizeit </li>
                     <li>Geschichte </li> 
                     <li>Gesundheit & Fitness </li>
                     <li>Musik </li>
                     <li>Nachrichten & Politik </li> 
                     <li>Sport </li>
-                    <li><a class="color-change-2" href="trueCrime.html">True Crime</a> </li>
+                    <li><a class="color-change" href="trueCrime.html">True Crime</a> </li>
                     <li>Technologie </li>
             </section>
+            <br>
         </article>
     </body>
+
     <footer>
         <p>© 2023 by Em & An</p>
    </footer>

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.144);
+    border-bottom: 2px solid white;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+nav li a{
+    font-size: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li .active{
+    color: cadetblue;
+}
+nav img{
+    height: 46px;
+    border-radius: 2mm;
+    position: absolute;
+    top: 4%;
+    margin-left: 25px;
+}
+div img{
+    margin-left: 0% ;
+    width: 50%;
+    float: left;
+}
+div section h1{
+    text-align: center;
+    margin-right: 4%;
+    padding-top: 26px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+div section img{
+    width: 125px;
+    float: right;  
+}
+div img{
+    width:50%
+}
+div section h2{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 52%;
+    margin-top: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div section video{
+    width: 48%;
+    float: right;
+    border: 2px solid white;
+    margin-right: 1%;
+    margin-top: 3%;
+}
+aside{
+    width:23%;
+    float: right;
+    margin: 0,5%;
+    background-color: rgb(232, 232, 232);
+    border: medium black solid;
+    border-radius: 0.35em;
+    text-align: center;}
+div section div h2{
+    margin-left: 52%;
+    margin-top: 25pc;
+    font-size: xx-large;
+}
+div section div h3{
+    margin-left: 52%;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div section div h4{
+    margin-top: 30px;
+    margin-left: 60%;
+    padding-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 40px;
+    border-radius: 2mm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: red;
+}
+
+
