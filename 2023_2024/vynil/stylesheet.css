@@ -2,7 +2,6 @@
 
 nav {
   background-color: #B1BAD1;
-<<<<<<< HEAD
  }
 
  /* Style the navbar links */
@@ -47,9 +46,6 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-=======
-  padding: 10px;
->>>>>>> b6c36fa5d5e71002c29c26a0dd8eb9091a56f239
  }
 
  ul {
@@ -291,19 +287,3 @@ li {
   margin-bottom: 30px;
   border-radius: 5px;
  }
-<<<<<<< HEAD
-=======
-
- #landing {
-  background-color: #636d7f;
-  width: 100%;
-  text-align: center;
- }
-
- #features {
-  width: 100%;
-  background-color: #3b6430;
-  margin-top: 5%;
-  margin-bottom: 5%;
- }
->>>>>>> 234ea1103d85f5829de0a11e2bd02320a643b0ad
