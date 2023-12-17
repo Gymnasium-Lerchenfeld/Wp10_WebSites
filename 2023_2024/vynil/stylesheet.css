@@ -31,23 +31,6 @@ nav {
   width: 40mm;
  }
 
- .search {
-  width: 3.5mm;
- }
-
- button {
-  background-color: #B1BAD1;
- }
-
- form {
-  background-color: #B1BAD1;
-  width: 300px;
-  height: 44px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
- }
 
  ul {
   list-style: none;
@@ -70,7 +53,7 @@ nav {
  }
 
  a:hover {
-  color: rgb(255, 255, 255);
+  color: white;
  }
 
  /* Image Styles */
@@ -160,7 +143,7 @@ table {
  .Kundenbewertung p:first-child {
   margin-bottom: 10px;
  }
- 
+
  .Kundenbewertung p:last-child {
   margin-top: 0;
  }
@@ -168,87 +151,42 @@ table {
  /* Container Styles */
 
 .container {
-
   max-width: 1200px;
-
   margin: 0 auto;
-
   padding: 0 20px;
-
 }
-
 
 /* Section Styles */
 
 .features .Karte {
-
   padding: 60px 0;
-
   background-color: #f7f7f7;
-
 }
-
 
 /* Heading Styles */
 
 h2 {
-
   font-size: 2.5rem;
-
   margin-bottom: 20px;
-
 }
-
 
 /* Text Styles */
 
 p {
-
   font-size: 1.125rem;
-
   margin-bottom: 20px;
-
 }
 
 
 ul {
-
   list-style-type: none;
-
 }
 
 
 li {
-
   font-size: 1.125rem;
-
   margin-bottom: 10px;
-
 }
- 
- form {
-  margin-top: 20px;
- }
- 
- input[type="text"], input[type="email"], textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
- }
- 
- button[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
- }
- 
- button[type="submit"]:hover {
-  background-color: #666;
- }
 
  .features, .testimonials {
   background-color: #ffffff;
@@ -363,3 +301,36 @@ li {
   color:rgb(0, 0, 0)
  }
 
+
+form {
+  margin-top: 20px;
+ }
+ 
+ input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+ }
+ 
+ button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+ }
+ 
+ button[type="submit"]:hover {
+  background-color: #666;
+ }
+
+ .email {
+  color: #666;
+ }
+
+.email:hover {
+  color: #111;
+}
