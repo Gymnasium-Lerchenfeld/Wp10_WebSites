@@ -52,7 +52,7 @@ nav img {
     width: 20%;
     margin-right: 200px;   
 }
-/* es in Prozent damit das Bild kleiner wird wenn der Bilschirm kleiner wird*/
+/* es in Prozent, damit das Bild kleiner wird wenn der Bilschirm kleiner wird*/
 .podcastLogos {
     height: 10%;
     width: 10%;
@@ -96,7 +96,8 @@ footer {
 .links {
     color: #000000;
 }
-/* Eigentlich wollte ich das zur class color change hinzufügen, jedoch ging das nicht, weil dann der Link immer noch blau gewesen wär und man kann keine zwei class machen deshalb ist das jetzt eine neue class */
+/* Eigentlich wollte ich das zur class color change hinzufügen, jedoch ging das nicht, weil dann der Link immer noch blau gewesen wäre 
+und man keine zwei class machen kann, deshalb ist das jetzt eine neue class */
  .links:hover {
     color: #afafaf;
  }
@@ -105,7 +106,9 @@ footer {
     width: 23%;
     margin-right: 200px;  
  }
- /*Ich hab keine Ahnung warum ich nicht einfach alle Podcast Logos in eine class machen kann. Als ich das gemacht hab waren die Logos nicht gleich groß und es war hässlich also musste ich zwei class machen aber ich hab keine Ahnung wo der Fehler liegt aber so ist das Problem auch gelöst */
+ /*Ich hab keine Ahnung warum ich nicht einfach alle Podcast Logos in eine class machen kann. Als ich das gemacht hab, waren die Logos 
+ nicht gleich groß und es war nicht so hübsch also musste ich zwei class machen, aber ich hab keine Ahnung, wo der Fehler liegt, 
+ aber so ist das Problem auch gelöst */
  .podcastLogos2 {
     height: 10%;
     width: 10%;
@@ -117,12 +120,12 @@ footer {
     display: flex;
     flex-direction: column;
  }
- /* mit container wird der text überhaupt in so boxen gemacht */
+ /* mit container wird der Text überhaupt in Boxen gemacht */
 
 .row {
     display: flex;
 }
-/* row ist dafür da um die boxen in unterschiedliche zeilen zu tun */
+/* row ist dafür da um die Boxen in unterschiedliche Zeilen zu tun */
 
  .box {
     width: 240px;
@@ -136,7 +139,7 @@ footer {
     padding-top: 2%;
     padding-bottom: 2%; 
  }
- /* box ist für die boxen bei wie erstellt man einen podcast */
+ /* box ist für die Boxen bei wie erstellt man einen podcast */
  .box1 {
     width: 260%;
     height: 253%;
@@ -149,7 +152,7 @@ footer {
     padding-bottom: 2%; 
     font-size: larger;
  }
-/* box 1 ist für die unterste box die andere maße als die anderen boxen hat */
+/* box 1 ist für die unterste Box die andere Maße als die anderen Boxen hat */
  .box2 {
     width: 200%;
     height: 135px;
@@ -163,5 +166,5 @@ footer {
     padding-bottom: 2%; 
  }
  /* man kann box und box2 nicht zu einer class zusammenfügen, da height in px angegeben 
- wird aber es eine unterschiedlcihe bei beiden ist jedoch kann man eine sacghe nicht in zwei class definieren 
- #deshalb muss ich einige sachen wiederholen */
+ wird aber es eine unterschiedliche bei beiden ist, jedoch kann man eine Sache nicht in zwei class definieren, 
+ deshalb müssen einige Sachen wiederholt werden */
