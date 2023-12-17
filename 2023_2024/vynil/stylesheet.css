@@ -80,3 +80,106 @@ table {
   padding: 5px;
   color: #B1BAD1;
  }
+
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+   
+ }
+ 
+ .features, .testimonials, .Kontakt {
+  margin-bottom: 30px;
+ }
+ 
+ h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+ }
+ 
+ p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+ }
+ 
+ ul {
+  color: #666;
+  font-size: 16px;
+ }
+ 
+ .Kundenbewertung {
+  margin-bottom: 20px;
+ }
+ 
+ .Kundenbewertung p:first-child {
+  margin-bottom: 10px;
+ }
+ 
+ .Kundenbewertung p:last-child {
+  margin-top: 0;
+ }
+ 
+ form {
+  margin-top: 20px;
+ }
+ 
+ input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+ }
+ 
+ button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+ }
+ 
+ button[type="submit"]:hover {
+  background-color: #666;
+ }
+
+ .features, .testimonials {
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .features p, .testimonials p {
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+ }
+
+ .features h2, .testimonials h2 {
+  background-color: #B1BAD1;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+ }
+
+ .features ul {
+  list-style-type: none;
+  padding: 0;
+ }
+ 
+ .features li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+ }
+ 
+ .features li:before {
+  content: "\2022";
+  padding-right: 5px;
+ }
+
+ .testimonials .Kundenbewertung {
+  background-color: #eee;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+ }
