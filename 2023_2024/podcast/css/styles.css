@@ -117,10 +117,12 @@ footer {
     display: flex;
     flex-direction: column;
  }
+ /* mit container wird der text überhaupt in so boxen gemacht */
 
 .row {
     display: flex;
 }
+/* row ist dafür da um die boxen in unterschiedliche zeilen zu tun */
 
  .box {
     width: 240px;
@@ -134,7 +136,7 @@ footer {
     padding-top: 2%;
     padding-bottom: 2%; 
  }
-
+ /* box ist für die boxen bei wie erstellt man einen podcast */
  .box1 {
     width: 260%;
     height: 253%;
@@ -147,7 +149,7 @@ footer {
     padding-bottom: 2%; 
     font-size: larger;
  }
-
+/* box 1 ist für die unterste box die andere maße als die anderen boxen hat */
  .box2 {
     width: 200%;
     height: 135px;
@@ -160,3 +162,6 @@ footer {
     padding-top: 2%;
     padding-bottom: 2%; 
  }
+ /* man kann box und box2 nicht zu einer class zusammenfügen, da height in px angegeben 
+ wird aber es eine unterschiedlcihe bei beiden ist jedoch kann man eine sacghe nicht in zwei class definieren 
+ #deshalb muss ich einige sachen wiederholen */
