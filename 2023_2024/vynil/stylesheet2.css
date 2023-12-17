@@ -1,6 +1,47 @@
 nav {
     background-color: #B1BAD1;
-    padding: 10px;
+   }
+  
+   /* Style the navbar links */
+   li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: flex;
+   }
+  
+   /* Change color on hover */
+   nav a:hover {
+    background-color: #111;
+   }
+  
+   /* Add a shopping cart image to the far right */
+   .shoppingcart {
+    float: right;
+   }
+  
+  
+  
+   .Logo {
+    width: 40mm;
+   }
+  
+   .search {
+    width: 3.5mm;
+   }
+  
+   button {
+    background-color: #B1BAD1;
+   }
+  
+   form {
+    background-color: #B1BAD1;
+    width: 300px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
    }
   
    ul {
@@ -26,17 +67,17 @@ nav {
    a:hover {
     color: black;
    }
-
+  
    /* Image Styles */
-
- .Logo {
+  
+   .Logo {
     width: auto;
-    height: 30px;
+    height: 60px;
    }
   
    .shoppingimage {
     width: auto;
-    height: 50px;
+    height: 70px;
    }
   
    /* Styles for the product overview table */
@@ -241,9 +282,9 @@ nav {
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 5px;
-   }
-
-   @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+   } 
+  
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
 @font-face {
@@ -255,7 +296,6 @@ nav {
 }
 
 * {
-    box-sizing: border-box;
     font-family: Raleway;
     color: #777;
 }
@@ -264,21 +304,6 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-}
-
-
-
-.band-name {
-    text-align: center;
-    margin: 0;
-    font-size: 4em;
-    font-family: "Booter - Zero Zero";
-    font-weight: normal;
-    color: white;
-}
-
-.band-name-large {
-    font-size: 8em;
 }
 
 .content-section {
@@ -296,39 +321,6 @@ html, body {
     color: #333;
     text-align: center;
     font-size: 2.5em;
-}
-
-.about-band-image {
-    float: left;
-    height: 200px;
-    width: 200px;
-    margin: 15px;
-    border-radius: 50%;
-}
-
-.main-footer {
-    background-color: #56CCF2;
-    color: white;
-    padding: .25em 0;
-}
-
-.main-footer-container {
-    display: flex;
-    align-items: center;
-}
-
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
-}
-
-.footer-nav li {
-    padding: 0 .5em;
-}
-
-.footer-nav img {
-    width: 30px;
-    height: 30px;
 }
 
 .btn {
@@ -416,17 +408,17 @@ html, body {
 }
 
 .shop-item-title {
-    display: block;
+    display: flex;
     width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5em;
-    color: #333;
+    font-size: 1em;
+    color: #000000;
     margin-bottom: 15px;
 }
 
 .shop-item-image {
-    height: 250px;
+   height: 250px;
 }
 
 .shop-item-details {
