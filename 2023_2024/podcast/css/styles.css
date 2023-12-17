@@ -99,7 +99,7 @@ footer {
 .links {
     color: rgb(97, 97, 97);
 }
-/* also eigentlich wollte ich das zur class color change hinzufügen jedoch ging das nicht weil dann der link immer noch blau gewesen wär und man kann keine zwei class machen deshalb ist das jetzt eine neue */
+/* Eigentlich wollte ich das zur class color change hinzufügen, jedoch ging das nicht, weil dann der Link immer noch blau gewesen wär und man kann keine zwei class machen deshalb ist das jetzt eine neue class */
  .links:hover {
     color: #afafaf;
  }
@@ -108,7 +108,7 @@ footer {
     width: 23%;
     margin-right: 200px;  
  }
- /*ich hab keine ahnung warum ich nicht einfach alle podcast logos in eine class machen kann nur als ich das gemacht hab waren die nicht gleich groß und es war hässlich also musste ich zwei machen ich hab keine ahnung wo der fehler liegt aber so ist das problem auch gelöst */
+ /*Ich hab keine Ahnung warum ich nicht einfach alle Podcast Logos in eine class machen kann. Als ich das gemacht hab waren die Logos nicht gleich groß und es war hässlich also musste ich zwei class machen aber ich hab keine Ahnung wo der Fehler liegt aber so ist das Problem auch gelöst */
  .podcastLogos2 {
     height: 10%;
     width: 10%;
