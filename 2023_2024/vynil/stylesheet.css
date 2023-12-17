@@ -331,7 +331,7 @@ li {
  }
 
  #Karte p {
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: end;
   margin-top: 50px;
   flex-direction: column;
@@ -358,3 +358,8 @@ li {
  h1 {
   color: #0f4a39;
  }
+
+ p {
+  color:rgb(0, 0, 0)
+ }
+
