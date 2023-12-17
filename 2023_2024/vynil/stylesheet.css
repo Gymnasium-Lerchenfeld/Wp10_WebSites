@@ -19,7 +19,7 @@ nav {
  }
 
  a {
-  color: white;
+  color: #636d7f;
   text-decoration: none;
   transition: color 0.2s ease;
   font-size: larger;
@@ -136,7 +136,7 @@ table {
 
 /* Section Styles */
 
-.features {
+.features .Karte {
 
   padding: 60px 0;
 
