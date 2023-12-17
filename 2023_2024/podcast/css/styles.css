@@ -34,7 +34,11 @@ nav ul li a{
 nav ul li .active{
     color: #afafaf;
 }
+/* Hier ist die class active beschrieben*/
 li a {
+    color: #000000;
+}
+table tr td a{
     color: #000000;
 }
 img {
@@ -59,7 +63,7 @@ nav img {
 .color-change:hover {
     color: #afafaf;
 }
-/* mit hover wird der text eine andere farbe wenn man mit der maus dadrüber geht */
+/* mit hover wird der Text eine andere Farbe wenn man mit der Maus dadrüber geht */
 h1{
     font-size: 2.7em;
     text-align: center;
