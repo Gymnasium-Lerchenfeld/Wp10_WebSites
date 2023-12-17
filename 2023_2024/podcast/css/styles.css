@@ -2,16 +2,19 @@
 html{
     height: 100%;
     font-family: 'Open Sans', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 body{
     height: 100%;
-    background-color: #afafaf;   
+    background-color: #afafaf; 
 }
 nav{
     height: 90px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.144);
+    border-radius: 1.5em;
 }
 nav ul{
     float: right;
@@ -31,18 +34,83 @@ nav ul li a{
 nav ul li .active{
     color: #afafaf;
 }
-
+/* Hier ist die class active beschrieben*/
 li a {
+    color: #000000;
+}
+table tr td a{
     color: #000000;
 }
 img {
     height: 70px;
     float: right;
 }
-
+nav img {
+    height: 85px;
+    position: absolute;
+    margin-left: 20px;
+}
 .logosVonApps {
+    height: 20%;
+    width: 20%;
+    margin-right: 200px;   
+}
+/* es in Prozent damit das Bild kleiner wird wenn der Bilschirm kleiner wird*/
+.podcastLogos {
     height: 10%;
     width: 10%;
-    margin-right: 200px;
-    
 }
+.color-change:hover {
+    color: #afafaf;
+}
+/* mit hover wird der Text eine andere Farbe wenn man mit der Maus dadrüber geht */
+h1{
+    font-size: 2.7em;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+p {
+    text-align: justify;
+} 
+h3 {
+    font-size:1.5em; 
+}
+section {
+    background-color: rgb( 255, 255, 255);
+    border-radius: 1em;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 2%;  
+}
+footer {
+    background-color: rgb( 255, 255, 255);
+    border-radius: 1em;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;  
+}
+.links {
+    color: rgb(97, 97, 97);
+}
+/* Eigentlich wollte ich das zur class color change hinzufügen, jedoch ging das nicht, weil dann der Link immer noch blau gewesen wär und man kann keine zwei class machen deshalb ist das jetzt eine neue class */
+ .links:hover {
+    color: #afafaf;
+ }
+ .podcastLogos {
+    height: 23%;
+    width: 23%;
+    margin-right: 200px;  
+ }
+ /*Ich hab keine Ahnung warum ich nicht einfach alle Podcast Logos in eine class machen kann. Als ich das gemacht hab waren die Logos nicht gleich groß und es war hässlich also musste ich zwei class machen aber ich hab keine Ahnung wo der Fehler liegt aber so ist das Problem auch gelöst */
+ .podcastLogos2 {
+    height: 10%;
+    width: 10%;
+    margin-right: 200px;  
+ }

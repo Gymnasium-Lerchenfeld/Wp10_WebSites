@@ -10,13 +10,15 @@ Students learnd HTML, CSS and simple tasks in JavaScript.
 * WasGeht von Merle Camilla König und Liam Jürgens
 * Haustiere von Santirne Breiden und Anna Lisel Alma Rhothe
 * Apple von Qasim Sjawie, Conner Kabus und Corvin Stückroth
+
 # Year 2023/2024
 * Jugendwörter von Carl Henry Bruckschen und August Werner Tiedemann
 * Formel 1 von Amelie Ballnus und Hannah Brandes
 * Musiksamples von Johannes Schürer und Jonas Otto
 * Schizophrenie von Leonie Frederike Werner und Fijona Sadiku
-* von Antonia Paula Ortmann und Emma Berenike Müller
-* von Jose Diogo Silva Lazaro und Paul Connor Delfs
-* von Lasse Wissing, Amade Federic Richard und Onno Martinius
+* Formel 1 von Antonia Paula Ortmann und Emma Berenike Müller
+* Tesla von Jose Diogo Silva Lazaro und Paul Connor Delfs
+* Handballshop von Lasse Wissing, Amade Federic Richard und Onno Martinius
+* Echotunes von Johannes Schürer
 * von Hami Alasdair Gordon, Tim Haseloh
-* von ...
+* Vynil von ...
