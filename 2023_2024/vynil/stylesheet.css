@@ -66,7 +66,7 @@ nav {
  }
 
  a {
-  color: #636d7f;
+  color: white;
   text-decoration: none;
   transition: color 0.2s ease;
   font-size: larger;
@@ -183,7 +183,7 @@ table {
 
 /* Section Styles */
 
-.features {
+.features .Karte {
 
   padding: 60px 0;
 
@@ -291,3 +291,19 @@ li {
   margin-bottom: 30px;
   border-radius: 5px;
  }
+<<<<<<< HEAD
+=======
+
+ #landing {
+  background-color: #636d7f;
+  width: 100%;
+  text-align: center;
+ }
+
+ #features {
+  width: 100%;
+  background-color: #3b6430;
+  margin-top: 5%;
+  margin-bottom: 5%;
+ }
+>>>>>>> 234ea1103d85f5829de0a11e2bd02320a643b0ad
