@@ -14,11 +14,12 @@ ul {
  }
 
  /* Style the navbar links */
- nav a {
+ li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  display: flex;
  }
 
  /* Change color on hover */
@@ -26,10 +27,6 @@ ul {
   background-color: #111;
  }
 
- li a {
-  display: flex;
- }
- 
  /* Add a shopping cart image to the far right */
  .shoppingcart {
   float: right;
