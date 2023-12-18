@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Die consent.js Datei ist für Dummy Cookie-Anfrage eingebaut. -->
+        <script src="javascript/consent.js" defer></script>
+            <link rel="stylesheet" href="css/styles.css">
+            <title>Home - New Super Mario Bros Wonder - Info Page</title>
+        </head>
+        <body background="img/IMG_6672.jpg">
+            <header>
+                <div class="logo"><b>Waste or Value</b></div> <!--Logo und Navigation, um zu den Unterseiten zu navigieren tritt bei allen Seiten wiederholt auf-->
+                    <nav>
+                            <ul>
+                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a href="gameplay.html">Gameplay</a></li>
+                            <li><a href="storyanddesign.html">Story and Design</a></li>
+                            <li><a href="wonders.html">Wonders</a></li>
+                        </ul>
+                    </nav> 
+                </header>
+            <div class="header-image">
+                <img width="100%" height="20px" src="img/IMG_6713_out.png">
+            </div>
+            <main>
+                <section class="main">
+                    <h3>Contents</h3>
+                    <p>The new Mario game is out and you can’t decide whether to buy or not because of the expensive price? That’s when you ask yourself if it’s really worth it. That’s where we come into play. We have analysed the game so you don’t have to. We will cover 3 topic areas (Gameplay, Story and Design, Wonder Effects). After reading it you should have a clearer opinion about the purchase.</p>
+                </section>
+                <section>
+                    <h3>Basic Info</h3>
+                    <p>Super Mario Bros Wonder is a platformer sidescrolling game that comes from the Super Mario series, which is a series of video games from the Japanese game console manufacturer and game developer Nintendo. The first game in the series was released in 1985 with Super Mario Bros. for the Famicom, initially exclusively in Japan. Shigeru Miyamoto, who still works for the company, is the creator of the game series and the character Mario. To date, the series' games have sold over 400 million copies worldwide, making Super Mario one of the best-selling game series to date.                    </p>
+                    <div class="image-section">
+                        <img src="img/IMG_6707.jpeg">
+                    </div>
+                </section>
+                <section>
+                    <h3>Newcomers</h3>
+                    <p>If you’re completely new to Mario games that’s completely okay. Even for people who don’t know Mario games at all this website could be useful. The trailer of the game can be found down below.</p>
+                    <div class="responsive-iframe-container">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/XvQNlGKNC6o?si=8TdWXAGwVEaTa8eJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section>
+                    <h3>Other Mario Games</h3>
+                    <p>Here is a list of very popular Mario Games</p>
+                    
+                    <!--Tabelle mit anderen Mario Spielen, die andere interessieren könnten.-->
+                    <table bgcolor="black" width="100%">
+                        <tr bgcolor="white">
+                            <td><a href="https://de.wikipedia.org/wiki/Super_Mario_Bros.">Super Mario Bros</a></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td><a href="https://de.wikipedia.org/wiki/Super_Mario_World">Super Mario World</a></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/Super_Mario_64">Super Mario 64</a>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/Super_Mario_Sunshine">Super Mario Sunshine</a>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/New_Super_Mario_Bros.">New Super Mario Bros.</a>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/Super_Mario_Galaxy">Super Mario Galaxy</a>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/New_Super_Mario_Bros._Wii">New Super Mario Bros. Wii</a>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/Super_Mario_3D_Land">Super Mario 3D Land</a>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/Super_Mario_3D_World">Super Mario 3D World</a>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/Super_Mario_Maker">Super Mario Maker</a>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>
+                                <a href="https://de.wikipedia.org/wiki/Super_Mario_Odyssey">Super Mario Odyssey</a>
+                            </td>
+                        </tr>
+                            <tr bgcolor="white">
+                                <td>
+                                    <a href="https://de.wikipedia.org/wiki/Paper_Mario:_The_Origami_King">Paper Mario: The Origami King</a>
+                                </td>
+                        </tr>
+                    </table>
+                </section>
+            </main>
+            <footer>
+                <section>
+                    <!-- Im Footer haben wir eine Dummy Cookie-Anfrage eingebaut. Da unsere Website lokal zu erreichen ist und wir keine Cookies haben, gibt's keine Datenschutzerklärung. -->
+                    <div>
+                        <p>Copyright-2023 ADGames</p>
+                    </div>
+                    <div>
+                        <p><a class="no-decoration" href="impressum.html">Imprint</a></p>
+                    </div>
+                    <div id="consent-popup" style="display: none;">
+                        <p>We use cookies to ensure the best experience on our website. Please agree to the use of cookies.</p>
+                        <button onclick="acceptCookies()">Accept</button>
+                        <button onclick="declineCookies()">Decline</button>
+                    </div>
+                </section>
+            </footer>
+            </body>
+    </html>
