@@ -94,7 +94,7 @@ table {
  
  thead th {
   padding: 5px;
-  text-align: center;
+  text-align: left;
  }
  
  tbody {
@@ -122,7 +122,8 @@ table {
  h1 {
   margin-top: 20px;
   padding: 5px;
-  color: #4a4e69;
+  color: #0f4a39;
+  margin-left: 5%;
  }
 
  body {
@@ -226,29 +227,7 @@ li {
 
 }
  
- form {
-  margin-top: 20px;
- }
  
- input[type="text"], input[type="email"], textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
- }
- 
- button[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
- }
- 
- button[type="submit"]:hover {
-  background-color: #666;
- }
 
  .features, .testimonials {
   background-color: #ffffff;
@@ -367,3 +346,36 @@ li {
   color: black;
  }
 
+ .email {
+  color: #666;
+  font-size: larger;
+  padding: 0%;
+ }
+
+.email:hover {
+  color: #111;
+}
+
+form {
+  margin-top: 20px;
+ }
+ 
+ input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+ }
+ 
+ button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+ }
+ 
+ button[type="submit"]:hover {
+  background-color: #666;
+ }
