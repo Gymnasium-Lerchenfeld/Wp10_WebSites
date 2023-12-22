@@ -1,0 +1,131 @@
+<!--Der Allgemeine Aufbau unserer Website ist überall gleich:
+Oben ist die Navigationsleiste, an der man auch immer die aktuelle Seite ablesen kann.
+Darunter der main-Teil: links ein großes Bild und rechts ein Video, das das Produkt anteasert.
+Auf der rechten seite darunter ein Zugehöriger Text, bzw. zusätzlich ein weiteres Bild daneben.
+Ganz unten befindet sich unser Footer, der das Impressum und anderes beinhaltet.-->
+<!Doctype html>
+<html>
+   <head>
+    <title>Startseite | HandballMinusShop.de</title>
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/probe/styles.css" />
+   </head>
+
+   <body>
+      <nav id="navstartseite"><!---Dies ist ein Versuch für eine Navigationsleiste(hat ganz gut geklappt)-->
+         <!--Die Navigationsleiste ist dazu gedacht, schnell durch alle seiten zu navigieren. Links ist unser Logo zu sehen,
+         rechts sind die 3 Unterseiten unserer Website. Die Navigationsleiste ist auf allen seiten-->
+         <a href="index.html"><img src="images/logo versuch2.png" alt="logo des Shops"></a>
+         <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="handballschuhe.html">Handballschuhe</a></li>
+            <li><a href="handbaelle.html">Handbälle</a></li>
+         </ul>
+      </nav>
+      <main>
+         <img src="images/teaser.jpg">
+         <div class="boxnebenbild"><!--Das element heißt so, weil es eine Abschnitt ist, der sich rechts neben dem großem Bild befindet-->
+            <img src="images/logo versuch2.png" id="startseite"><!--das hier ist einmal unser logo in groß, als große überschrift der Startseite-->
+            <article id="startseite"><!--Dieser article stellt unsere website vor-->
+               <section>
+                  <h1 >Die Anlaufstelle für Handball-Enthusiasten</h1> <br><br>
+                  <p>
+                     Egal, ob du ein erfahrener Profi oder ein motivierter Einsteiger bist –
+                     bei HandballMinusShop.de bieten wir das Richtige für dich an. Als begeisterte 
+                     Sport-Fans wollen wir dir auf dieser Website unseren liebsten Ball und unsere besten Schuhe vorstellen und
+                     die Möglichkeit bieten, dieses Produkt sofort zu kaufen.
+                  </p>
+               </section>
+                  <br>
+               <section>
+                  <h2 >Qualität, die begeistert – Entdecke unsere Produkte</h2> <br><br>
+                  <p>
+                     Tauche ein in die Welt von HandballMinusShop.de und finde, was dein Handballherz begehrt. 
+                     Wir bieten nicht nur Produkte, sondern auch eine Erfahrung. Ball und Schuh
+                     – jedes Produkt in unserem Sortiment wurde sorgfältig ausgewählt, 
+                     um höchste Qualität und Leistung zu gewährleisten.
+                  </p>
+               </section>
+                  <br>
+               <section>
+                  <h2 > Mehr als nur ein Shop – Unsere Handball-Community</h2> <br><br>
+                  <p>
+                     HandballMinusShop.de ist mehr als nur ein Online-Shop. Es ist eine Plattform, 
+                     die die Handball-Community vereint. Teile deine Begeisterung, finde Inspiration 
+                     und entdecke die neuesten Trends im Handballsport. Unser Engagement geht über den Verkauf von 
+                     Produkten hinaus – wir fördern die Leidenschaft und den Teamgeist, die den Handballsport auszeichnen.
+                  
+                     Trete ein in die Welt von HandballMinusShop.de und lass dich von unserer Begeisterung für den 
+                     Handballsport inspirieren. Qualität, Vielfalt und Gemeinschaft – Wir freuen uns darauf, 
+                     Sie bei Ihrem nächsten Spiel zu begleiten. Willkommen bei HandballMinusShop.de!
+                  </p> 
+               </section>
+            </article>
+         </div>
+         <h1 >
+            Produktübersicht
+         </h1>
+         <table ><!--hier ist unsere Tabelle, sie ist eine kurze Produktübersicht über die beiden Dinge, die wir verkaufen-->
+            <thead>
+               <tr >
+                  <th >Produktname</th>
+                  <th >Produktbeschreibung</th>
+                  <th >Preis</th>
+                  <th >Verfügbarkeit</th>
+                  <th >Größe</th>
+                  <th >Marke</th>
+                  <th >Direktlink zum Shop</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr >
+                  <td >Kempa Spectrum Synergy Pro</td>
+                  <td >Hochwertiger Handball für Training und Wettkampf</td>
+                  <td >ab 35,90€</td>
+                  <td >Auf Lager</td>
+                  <td >Größe 2, 3</td>
+                  <td >Kempa</td>
+                  <td ><button><a target="_blank" href="https://www.indoortrends.de/artikel/kempa-spectrum-synergy-pro/groesse-2/cool-grau-sweden-blau/">indoortrends.de</a></button></td>
+               </tr>
+               <tr>
+                     <td >Kempa Wing Magma 2.0</td>
+                     <td>Ein einzigartiger Handballschuh für alle</td>  
+                     <td>149,99€</td>
+                     <td>Auf Lager</td>
+                     <td>Schuhgröße 7-12</td>
+                     <td>Kempa</td>
+                     <td><button><a target="_blank" href="https://kempa-sports.com/wing-lite-20-rot-200852007">Kempa-Sports.de</a></button></td>
+               </tr>
+            </tbody>
+         </table>
+      
+      </main>
+
+      <!--hier ist unser Footer, die beinhalteten Informationen haben wir uns hauptsächlich ausgedacht,
+      damit der Footer nicht so leer erscheint -->
+      <footer>
+         <div class="fußleistenelement">
+            Newsletter:<br>
+            anmelden und Vorteile sichern!</div>
+         <div class="fußleistenelement">
+            Kontakt: Tel.: 01290 2937624197<br>
+            Adresse: Lerchenfeld 10,<br>
+            22081 Hamburg<br>
+            E-Mail: handballminusshop@gmail.com
+         </div>
+         <div class="fußleistenelement">
+            Über uns <br>
+            Nachhaltigkeit<br>
+            Unternehmen<br>
+            Compliance<br>
+            Presse<br>         
+         </div>
+      
+   
+      </footer>
+   </body>
+</html>
+
+
+

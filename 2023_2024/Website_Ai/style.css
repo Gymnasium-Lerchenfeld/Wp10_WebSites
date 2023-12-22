@@ -1,0 +1,201 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: sans-serif;
+/*Generelle, auf den gesamten CSS Code angewandte Grundeinstellungen*/
+}
+.banner{ 
+ width:100%;
+ height:100vh;
+ background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(/images/Ki_Brain.jpg);
+ background-size: cover;
+ background-position: center;
+}
+.background1{ 
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(images/Ki_Background.png);
+    background-size: cover;
+    background-position: center;
+}
+.background2{ 
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(images/Ai_Chip.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background3{ 
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(images/Ki_Kopf.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+/*Einstellungen für die Hintergründe derjeweiligen Subseiten 
+!Grund dafür, dass der CSS Code nicht im separaten Ordner ist, denn sobald das so ist können die Hintergrundbilder nicht mehr verlinkt werden, 
+auch nicht nach Änderung der Verlinkung!*/
+.logo{
+    width: 120px;
+    cursor: pointer;   
+}
+.image{
+ width: 900px;  
+ height: 500px;
+ margin-bottom: 2.5%;
+ margin-top: 2.5%;
+ display: flex;
+ border: 2px solid #05c3f3;
+ cursor: pointer;
+ justify-content: space-between;
+}
+.main_image{
+    width: 900px;  
+    height: 600px;
+    margin-left: 12%;
+    margin-bottom: 2.5%;
+    position: absolute;
+    border: 2px solid #05c3f3;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+.video{
+    text-align: center;
+    width: 900px;  
+    height: 500px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid #05c3f3;
+    cursor: pointer; 
+}
+table, th, td {
+    border: 4px solid #05c3f3;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-collapse: collapse;
+}
+/*CSS Codes zur Definition der einzelnen Inhalte, wie z.B. die Bilder, das Video und die Tabellenelemente*/
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #05c3f3;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/*.navbar Codes definieren zum Einen die Navigationsleiste und zum Anderen die Animation, 
+die erscheint wenn man mit dem Cursor über die Wörter fährt*/
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.scroll{
+    color: #fff;
+    margin: 4px, 4px;
+    padding: 4px;
+    margin-left: 10%;
+    background: transparent;
+    width: 1340px;
+    height: 642px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    scrollbar-color: #05c3f3 transparent;
+    scrollbar-width: normal;
+
+}
+.headline{
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+}
+.headline2{
+    color: #fff;
+    font-size: x-large;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+} 
+/* Die obigen Codes definieren die verschiedenen Inhalte, also Überschriften scrollbare Textbereiche und standard Textbereiche*/  
+button{
+   width: 200px;
+   padding: 15px 0;
+   text-align: center;
+   margin: 20px 10px;
+   border-radius: 25px;
+   font-weight: bold;
+   border: 2px solid #05c3f3;
+   background: transparent;
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+}
+a {
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+span{
+    background: #05c3f3;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+/*Die button tags definieren die Knöpfe auf der Startseite, also ihr Auftreten vor, 
+während und nach der durch den Cursor/hover ausgelösten Animation*/

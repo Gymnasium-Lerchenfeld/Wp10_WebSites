@@ -1,0 +1,274 @@
+/*Im Allgemeinen ist unser CSS, wie rechts in der Anschauung zu sehen, in vier Bereiche aufgeteilt.
+  Einmal in allgemeine Eigenschaften für die Seite, die Navigationsleiste, der Hauptteil mit Fotos und Text und unser Footer.*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{/*Hier sind einige Angaben zum Hintergrund, z.B. die Eigenschaft background-attachment,
+      welche dafür zuständig ist, dass falls sich etwas auf der Seite bewegt, z.B. gesrcollt wird.*/
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Ab hier beginnt unser CSS zur Navigationsleiste*/
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.144);
+    border-bottom: 2px solid white;
+}
+#navstartseite{/*Hier haben wir dem ,,Startseiten-Nav" eine id gegeben, damit es keinen
+                 unteren weißen Rand hat, wie auf den anderen Seiten*/
+    border-bottom: 0px;
+}
+nav ul{
+    /*bedeutet, dass die Listenseite sich immer rechts befinden*/
+    float: right;
+}
+nav li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+nav li a{
+    font-size: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li .active{
+    color: cadetblue;/*dadurch wird auf jeder Seite direkt erkennbar, auf welcher seite man sich befindet*/
+}
+nav img{/*Das ist das CSS zu unserem Logo, welches gleichzeitig noch ein Link zur Startseite ist.*/
+    height: 46px;
+    border-radius: 2mm;
+    position: absolute;
+    top: 4%;
+    margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+/*Ab hier CSS zum Hauptteil*/
+main{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+main::after { /*Das hier ist ein Clearfix-Hack von ChatGPT, dank ihm funktioniert die Höhe des main-parts richtig*/
+    content: "";
+    display: table;
+    clear: both;
+ }
+main img{/*Hier die Attribute zu unserem großen Images auf der linken Seite*/
+    margin-left: 0% ;
+    width: 50%;
+    float: left;
+}
+
+h1{
+    text-align: center;/*Jenes zum Beispiel bedeutet, dass der Text in der Mitte zentriert ist.*/
+    margin-right: 4%;
+    padding-top: 24px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+.boxnebenbild{
+    width: 50%;
+    padding-bottom: 3%;
+    float: right;
+}
+.boxnebenbild video{/*Hier unser kurzes CSS zu den Videos,
+                      die sich jeweils auf der Produktseite befinden. Controls wie ,,autoloop" 
+                      oder ,,muted" befinden sich auf der jeweiligen html-Seite*/
+    width: 97%;
+    border: 2px solid white;
+    margin: 1%;
+}
+.boxnebenbild img{/*dies ist die Definition für das Bild rechts neben dem Text auf der Handballseite*/
+    width: 49%;
+    float: right;/*float right dient dazu, dass Text und Bild nebeneinander stehen*/
+}
+article{
+    /*Ab hier geben wir die Attribute zu unserem Text auf den Produktseiten*/
+    margin: 1%;
+    margin-top: 3%;
+    padding: 1%;
+    padding-bottom: 2%;
+    border: 2px rgb(255, 255, 255) solid;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-left: 1%;
+    float: right;
+}
+section{
+    line-height: 150%;
+}
+
+    /*die nächsten 3 abschnitte sind dazu gedacht, die einzelnen Article jeweils anzupassen*/
+
+#handbaellebeschreibung{ /*Hier haben wir eine id eingefügt, weil der Text auf der Handballseite anders definiert
+    werden sollte, als auf der Handballschuhseite. */
+    width: 48%;
+    padding: 0;
+    float: left;/*float left dient dazu, dass Text und Bild nebeneinander stehen*/
+}
+#schuheartikelbeschreibung{
+    /*Hier haben wir eine id eingefügt, weil der Text auf der Handballschuhseite anders definiert
+      werden sollte, als auf der Handballseite. */
+    text-align: left;
+    padding: 2%;
+    padding-right: 1%;
+    width: 95%;
+    margin-right: 1%;
+}
+#startseite{
+    /*Jenes ist unser CSS zum Article auf der Startseite*/
+    width: 98%;
+    margin: 0px;
+    border: 0px;
+    border-radius: 0;
+}
+/*Unteres ist das CSS zur Tabelle auf der Startseite*/
+table{
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    float: right;
+    text-align: center;
+    border: thin white solid;
+}  
+td, th{
+    border-top: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+        /*Hierdurch werden die einzelnen Zellen voneinander abgegrenzt*/
+}
+#kaufbutton{
+    float: right;
+    margin-left: 60%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    margin-top: 1%;
+    width: 20%;
+    text-decoration: none;
+    padding: 1%;
+    padding-right: 0;
+    color: #ffffff;
+    font-size: 25px;
+    border: solid white 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Hier muss gesagt werden, dass ist der Code vom Footer, an dem ich gefühlt Stunden gesessen habe,
+  jedoch habe ich ihn einfach nie perfekt hingekriegt. */   
+/*footer{
+    border-top: solid white 2px;
+    margin-top: 50px;
+}
+footer div{
+    /*Unteres sind kurze Definitionen zur den Eigenschaft der einzelnden Kästen im Footer.*/
+    /*color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 25%;
+    border: 2px solid white;
+    margin: 1%;
+    padding: 2%;
+}
+#fußleisterechts{
+    margin: 0;
+}
+#fußleistemitte{
+    margin: auto;/*Hier wurde definiert, dass der Kasten in der Mitte positionert ist.*/
+    /*margin-top: 1%;
+}
+#fußleistelinks{
+    float: left;
+}*/
+
+
+
+footer {
+    padding: 20px; /* Innenabstand des Footers */
+    color: white;
+    font-size: x-large;
+    margin-top: 3%;
+    border-top: solid white medium;
+    display: flex;
+}
+
+/* Stil für die Fußleisten (Links, Mitte, Rechts) */
+.fußleistenelement{
+    flex: 1;
+    width: 30%;
+    border: medium solid white;
+    margin: 1%;
+    padding: 2%;
+}
+
+/*
+.fußleiste {
+    display: inline-block;/*C
+    width: 30%; /* Breite jeder Fußleiste c*
+    height: 180px;
+    margin: left right 1%; /* Abstand zwischen den Fußleisten c*
+    background-color: black; /* Schwarzer Hintergrund für die Kästen c*
+    color: white; /* Weiße Schriftfarbe c*
+    border: 2px solid white; /* Weiße Border C*
+    padding: 2%; /* Innenabstand für jeden Text im Footer C*
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Schriftart C*
+    box-sizing: border-box; /* Beachten Sie die Border-Box, um die Gesamtbreite zu kalkulieren C*
+}
+
+#fußleistelinks {
+    float: left; /*C*
+}
+
+#fußleistemitte {
+    margin: auto; /* Hier wurde definiert, dass der Kasten in der Mitte positioniert ist. C*
+    width: 36%;
+}
+
+#fußleisterechts {
+    float: right;/*C*
+    margin-bottom: 300px;
+}
+*/
