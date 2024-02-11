@@ -23,3 +23,6 @@ Students learnd HTML, CSS and simple tasks in JavaScript.
 * Vynyl von Lasse Wissing, Amade Federic Richard und Onno Martinius
 * WasteOrValue von Arvid Behrends und Daryo Djafari
 * AI von Lasse Schmidt und Hannes Rottmann
+
+# Year 2024/2025
+ 
