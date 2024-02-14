@@ -12,13 +12,17 @@ Students learnd HTML, CSS and simple tasks in JavaScript.
 * Apple von Qasim Sjawie, Conner Kabus und Corvin Stückroth
 
 # Year 2023/2024
-* Jugendwörter von Carl Henry Bruckschen und August Werner Tiedemann
+* Echotunes von Johannes Schürer und Jonas Otto
+* FC-Arsenal von Hami Gordon und Tim Hasloh
 * Formel 1 von Amelie Ballnus und Hannah Brandes
-* Musiksamples von Johannes Schürer und Jonas Otto
-* Schizophrenie von Leonie Frederike Werner und Fijona Sadiku
-* Formel 1 von Antonia Paula Ortmann und Emma Berenike Müller
-* Tesla von Jose Diogo Silva Lazaro und Paul Connor Delfs
-* Handballshop von Lasse Wissing, Amade Federic Richard und Onno Martinius
-* Echotunes von Johannes Schürer
-* von Hami Alasdair Gordon, Tim Haseloh
-* Vynil von ...
+* Handballshop von Benjamin Geißler und Ansgar Krüger
+* Jugendwörter von Carl Henry Bruckschen und August Tiedemann
+* Podcasts von Antonia Ortmann und Emma Müller
+* Schizophrenie von Leonie Werner und Fijona Sadiku
+* Tesla von Diogo Silva Lazaro, Kewin Karaca und Paul Delfs
+* Vynyl von Lasse Wissing, Amade Federic Richard und Onno Martinius
+* WasteOrValue von Arvid Behrends und Daryo Djafari
+* AI von Lasse Schmidt und Hannes Rottmann
+
+# Year 2024/2025
+ 
