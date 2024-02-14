@@ -1,138 +1,100 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="de">
 <head>
-    
+    <!-- Meta-Informationen und Titel der Seite -->
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Echotune - Homepage</title>
-
-    <link rel="icon" href="Images/favicon.ico" />
-
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="icon" href="images/BackgroundLogo.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header>
+        <!-- Logo und Hauptüberschrift -->
+        <div class="logo-container">
+            <img src="images/BackgroundLogo.png" height="90" width="90" style="float:right" alt="Logo">
+            <h1>ECHOTUNE</h1>
+        </div>
+        <br>
 
-  <header>
-
-    <div class="logo-container">
-
-      <img src="Images/BackgroundLogo.png" height="90" width="90" style="float:right" />
-
-      <h1>ECHOTUNE</h1>
-
-    </div>
-    
-    <br>
-    
-    <nav>
-
-      <button class="pushable">
-
-        <a href="index.html">
-
-          <span class="shadow"></span>
-
-          <span class="edge"></span>
-
-          <span class="front">Startseite</span>
-
-        </a>
-
-      </button>
-
-      <button class="pushable">
-
-        <a href="SoundLibrary.html">
-
-          <span class="shadow"></span>
-
-          <span class="edge"></span>
-
-          <span class="front">Sound Library</span>
-
-        </a>
-
-      </button>
-
-      <button class="pushable">
-
-        <a href="blog.html">
-
-          <span class="shadow"></span>
-
-          <span class="edge"></span>
-
-          <span class="front">Blog</span>
-
-        </a>
-
-      </button>
-
-    </nav>
-
-  </header>
+        <!-- Navigationsleiste -->
+        <nav>
+            <a href="index.html"><div class="pushable"><span class="shadow"></span><span class="edge"></span><span class="front">Startseite</span></div></a>
+            <a href="soundlibrary.html"><div class="pushable"><span class="shadow"></span><span class="edge"></span><span class="front">Sound Library</span></div></a>
+            <a href="blog.html"><div class="pushable"><span class="shadow"></span><span class="edge"></span><span class="front">Blog</span></div></a>
+        </nav>
+    </header>
 
     <section>
-
+        <!-- Beschreibung der Startseite -->
         <h2>Startseite</h2>
-
-
-        <h3>Große Auswahl an kostenlosen audio samples zur professionellen  <br> Hip-Hop und R&B Produktion mit Tonart und BPM.</h3>
-
+        <h3>Große Auswahl an kostenlosen audio samples zur professionellen Hip-Hop und R&B Produktion mit Tonart und BPM.</h3>
         <br>
 
-        <br>
-
+        <!-- Container für Audio-Samples -->
         <div class="audio-group">
-        <div class="audio-item">
-            <img src="Images/car.gif" alt="Bild 1">
-            <audio controls>
-                <source src="AudioSamples/Loop_4.mp3" type="audio/mp3">
-                   Your browser does not support the audio element.
-            </audio>
+            <!-- Erstes Audio-Sample -->
+            <div class="audio-item">
+                <img src="images/car.gif" alt="Bild 1">
+                <div class="playbox">
+                    <audio controls>
+                        <source src="audiosamples/Loop_4.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="audiosamples/Loop_4.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
+                </div>
+            </div>
+
+            <!-- Zweites Audio-Sample -->
+            <div class="audio-item">
+                <img src="images/greek.gif" alt="Bild 2">
+                <div class="playbox">
+                    <audio controls>
+                        <source src="audiosamples/Loop_12.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="audiosamples/Loop_12.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
+                </div>
+            </div>
+
+            <!-- Drittes Audio-Sample -->
+            <div class="audio-item">
+                <img src="images/lonely.gif" alt="Bild 3">
+                <div class="playbox">
+                    <audio controls>
+                        <source src="audiosamples/Loop_8.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="audiosamples/Loop_8.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
+                </div>
+            </div>
+            <br>
         </div>
-
-        <div class="audio-item">
-            <img src="Images/greek.gif" alt="Bild 2">
-            <audio controls>
-            <source src="AudioSamples/Loop_12.mp3" type="audio/mp3">
-                   Your browser does not support the audio element.
-            </audio>
-        </div>
-        
-        <div class="audio-item">
-            <img src="Images/lonely.gif" alt="Bild 2">
-            <audio controls>
-            <source src="AudioSamples/Loop_8.mp3" type="audio/mp3">
-                       Your browser does not support the audio element.
-            </audio>
-
-
-        </div>
-      
-        <br> 
-
     </section>
 
-  <br>
+    <br>
+    <!-- Beschreibung der verfügbaren Samples -->
+    <p>Entdecken Sie eine vielfältige Sammlung von hochwertigen Musik-Samples, die Ihre Musik Produktion auf das nächste Level bringen werden.
+      Unsere mit Logic Pro erstellten Samples sind sorgfältig ausgewählt, lizenzfrei und kostenlos nutzbar.
+      Ganz gleich, ob Sie ein erfahrener Musiker oder ein Einsteiger in der Welt der Musikproduktion sind, unsere Samples sind leicht zu benutzen und in ihr Projekt einzubetten.
+      Unsere Sounds sind perfekt für Genres, wie Hip-Hop, R&B, Drill, Lo-fi und Chill.
+      Wir laden Sie herzlich ein, unsere Sammlung zu erkunden, sich inspirieren zu lassen und sich an unserer Auswahl an downloadbaren Sounds zu bedienen.</p>
 
-    Entdecken Sie eine vielfältige Sammlung von hochwertigen Musik-Samples,
-    die Ihre Musik Produktion <br> 
-    auf das nächste Level bringen werden. <br>
-    Unsere mit Logic Pro erstellten Samples sind sorgfältig ausgewählt, lizenzfrei und kostenlos nutzbar.<br><br>
-    Ganz gleich, ob Sie ein erfahrener Musiker oder ein Einsteiger in der Welt der Musikproduktion sind, unsere Samples <br>
-    sind leicht zu benutzen und in ihr Projekt einzubetten. <br>
-    Unsere Sounds sind perfekt für Genres, wie Hip-Hop, R&B, Drill, Lo-fi und Chill.<br>
-    Wir laden Sie herzlich ein, unsere Sammlung zu erkunden, sich inspirieren zu lassen <br>
-    und sich an unserer Auswahl an downloadbaren Sounds zu bedienen. <br>
+    <!-- Empfehlungen für weitere Sample-Bibliotheken -->
+    <h3>Andere empfehlenswerte Sample-Bibliotheken:</h3>
+    <ul>
+        <li><a href="https://splice.com/features/sounds?utm_campaign=377872436&utm_term=splice&utm_content=kwd-77653382165410:aud-813921850:loc-72&utm_source=bing&utm_medium=cpc&msclkid=03cd94224be91f6582d4f15a3356036d">Splice</a></li>
+        <li><a href="https://cymatics.fm/">Cymatics</a></li>
+        <li><a href="https://www.tracklib.com/">Tracklib</a></li>
+        <li><a href="https://ripspeakers.com/">RIP Speakers</a></li>
+        <li><a href="https://unison.audio/free-packs/">Unison Audio</a></li>
+    </ul>
 
-
-
-
+    <!-- Footer mit Urheberrechtsinformation und Erstellern -->
+    <footer>
+        <p>&copy; Echotune 2023.</p>
+        <p>erstellt von Johannes und Jonas, Informatik 10 Klanck, Gymnasium Lerchenfeld</p>
+    </footer>
+</body>
 </html>
