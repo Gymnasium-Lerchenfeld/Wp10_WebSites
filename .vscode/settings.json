@@ -9,10 +9,17 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
+<<<<<<< HEAD
+            "name": "GyleInf",
+            "database": "gyleinf",
+            "username": "GyleInf",
+            "password": "GyleInf"
+=======
             "name": "Gyleinf",
             "username": "Gyleinf",
             "database": "gyleinf",
             "password": "Gyleinf"
+>>>>>>> 98a6b5cf130baa33003b4b1731248a20ddbc0d36
         }
     ]
 }
