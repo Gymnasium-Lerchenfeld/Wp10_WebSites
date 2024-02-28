@@ -1,303 +1,293 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <!-- Seitenkopf mit Titel, Favicon und Stylesheet -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Echotune - Sound Library</title>
-  <link rel="icon" href="images/BackgroundLogo.ico">
-  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon"  href="Images\favicon.ico"/>
+  
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  
   <header>
-    <!-- Logo und Hauptüberschrift -->
+    
     <div class="logo-container">
-      <img src="images/BackgroundLogo.png" height="90" width="90" style="float:right" alt="Logo">
-      <h1>ECHOTUNE</h1>
+      
+      <img src="Images\BackgroundLogo.png" height="90" width="90" style="float:right" />
+      
+      <h1>ECHOTUNE</h1> 
+    
     </div>
+    
     <br>
 
-    <!-- Navigationsleiste -->
     <nav>
-      <a href="index.html"><div class="pushable"><span class="shadow"></span><span class="edge"></span><span class="front">Startseite</span></div></a>
-      <a href="soundlibrary.html"><div class="pushable"><span class="shadow"></span><span class="edge"></span><span class="front">Sound Library</span></div></a>
-      <a href="blog.html"><div class="pushable"><span class="shadow"></span><span class="edge"></span><span class="front">Blog</span></div></a>
+
+      <button class="pushable">
+
+        <a href="index.html">
+
+          <span class="shadow"></span>
+
+          <span class="edge"></span>
+
+          <span class="front">Startseite</span>
+
+        </a>
+
+      </button>
+
+      <button class="pushable">
+
+        <a href="SoundLibrary.html">
+
+          <span class="shadow"></span>
+
+          <span class="edge"></span>
+
+          <span class="front">Sound Library</span>
+
+        </a>
+
+      </button>
+
+      <button class="pushable">
+
+        <a href="blog.html">
+
+          <span class="shadow"></span>
+
+          <span class="edge"></span>
+
+          <span class="front">Blog</span>
+
+        </a>
+
+      </button>
+
     </nav>
+
   </header>
-
-  <!-- Hauptinhalt der Seite: Sound Library -->
+  
   <section>
+  
     <h2>Sound Library</h2>
+  
 
-    <!-- Drum Samples Abschnitt -->
+    <br>
+    
     <h2>Drum Samples</h2>
-    <div class="audio-group"> <!-- Gruppe von Audioelementen-->
-      <div class="audio-item" style="vertical-align:middle"> <!-- vertikale Ausrichtung des Audioplayers-->
-        <img src="images/DrumCover.png" alt="Bild 1"> <!-- Coverbild der Samples-->
-        <div class="playbox">
+    
+    <div class="audio-group">
+    <div class="audio-item">
+        <img src="Images/DrumCover.png" alt="Bild 1">
         <audio controls>
-            <source src="audiosamples/Loop_10.mp3" type="audio/mp3"> <!-- angezeigtes Audiosample-->
-               Ihr Browser unterstützte das "Audio"-Element nicht.
+            <source src="AudioSamples/Loop_10.mp3" type="audio/mp3">
+               Your browser does not support the audio element.
         </audio>
-        <a href="audiosamples/Loop_10.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a> <!-- Kopplung des Downloadbuttons mit dem Downloadlink-->
-      </div>
-      <p> Key:C minor, BPM:150</p> <!-- Beschreibung des Samples-->
+     </div>
+
+    <div class="audio-item">
+        <img src="Images/DrumCover.png" alt="Bild 2">
+         <audio controls>
+         <source src="AudioSamples/Loop_2.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+        </audio>
+     </div>
+      
+    <div class="audio-item">
+        <img src="Images/DrumCover.png" alt="Bild 2">
+        <audio controls>
+         <source src="AudioSamples/Loop_14.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+        </audio>
     </div>
-    <div class="audio-item">
-        <img src="images/DrumCover.png" alt="Bild 2">
-        <div class="playbox">
-        <audio controls>
-        <source src="audiosamples/Loop_2.mp3" type="audio/mp3">
-                Ihr Browser unterstützte das "Audio"-Element nicht.
-        </audio>
-        <a href="audiosamples/Loop_2.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:E minor, BPM:130</p>
-      </div>
-    <div class="audio-item">
-        <img src="images/DrumCover.png" alt="Bild 2">
-        <div class="playbox">
-        <audio controls>
-        <source src="audiosamples/Loop_14.mp3" type="audio/mp3">
-                    Ihr Browser unterstützte das "Audio"-Element nicht.
-        </audio>
-        <a href="audiosamples/Loop_14.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:C minor, BPM:110</p>
-      </div>
-    </div>  <!-- Ende der ersten Audiogruppe-->
-    <br>
-    <div class="audio-group"> <!-- ab hier geht es wieder von vorne los (siehe Kommentar darüber)-->
-    <div class="audio-item">
-      <img src="images/DrumCover.png" alt="Bild 1">
-      <div class="playbox">
-      <audio controls>
-      <source src="audiosamples/Loop_6.mp3" type="audio/mp3">
-             Ihr Browser unterstützte das "Audio"-Element nicht.
-      </audio>
-      <a href="audiosamples/Loop_6.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:Bb minor, BPM:115</p>
-      </div>
-  <div class="audio-item">
-      <img src="images/DrumCover.png" alt="Bild 2">
-      <div class="playbox">
-       <audio controls>
-       <source src="audiosamples/loop_17.mp3" type="audio/mp3">
-              Ihr Browser unterstützte das "Audio"-Element nicht.
-      </audio>
-      <a href="audiosamples/Loop_17.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:Eb minor, BPM:115</p>
-      </div>
-  <div class="audio-item">
-      <img src="images/DrumCover.png" alt="Bild 2">
-      <div class="playbox">
-      <audio controls>
-       <source src="audiosamples/Loop_16.mp3" type="audio/mp3">
-                  Ihr Browser unterstützte das "Audio"-Element nicht.
-      </audio>
-      <a href="audiosamples/Loop_16.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:B major, BPM:120</p>
-      </div>
     </div>
+    
+    
     <br>
 
-    <!-- Melody Samples Abschnitt -->
-    <h2>Melody Samples</h2>
-    <br>
+
     <div class="audio-group">
-      <div class="audio-item">
-      <img src="images/MelodyCover.png" alt="Bild 1">
-      <div class="playbox">
+    <div class="audio-item">
+      <img src="Images/DrumCover.png" alt="Bild 1">
       <audio controls>
-          <source src="audiosamples/Loop_11.mp3" type="audio/mp3">
-             Ihr Browser unterstützte das "Audio"-Element nicht.
+          <source src="AudioSamples/Loop_6.mp3" type="audio/mp3">
+             Your browser does not support the audio element.
       </audio>
-      <a href="audiosamples/Loop_11.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:C minor, BPM:121</p>
-      </div>
-  <div class="audio-item">
-      <img src="images/MelodyCover.png" alt="Bild 2">
-      <div class="playbox">
-       <audio controls>
-       <source src="audiosamples/loop_12.mp3" type="audio/mp3">
-              Ihr Browser unterstützte das "Audio"-Element nicht.
-      </audio>
-      <a href="audiosamples/Loop_12.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:E minor, BPM:100</p>
    </div>
+
   <div class="audio-item">
-      <img src="images/MelodyCover.png" alt="Bild 2">
-      <div class="playbox">
-      <audio controls>
-       <source src="audiosamples/loop_18.mp3" type="audio/mp3">
-               Ihr Browser unterstützte das "Audio"-Element nicht.
+      <img src="Images/DrumCover.png" alt="Bild 2">
+       <audio controls>
+       <source src="AudioSamples/loop_17.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
       </audio>
-      <a href="audiosamples/Loop_18.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:F minor, BPM:105</p>
+   </div>
+    
+  <div class="audio-item">
+      <img src="Images/DrumCover.png" alt="Bild 2">
+      <audio controls>
+       <source src="AudioSamples/loop_16.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+      </audio>
   </div>
   </div>
   <br>
+  <h2>Melody Samples</h2>
+  <br>
+
   <div class="audio-group">
     <div class="audio-item">
-      <img src="images/MelodyCover.png" alt="Bild 1">
-      <div class="playbox">
+      <img src="Images/MelodyCover.png" alt="Bild 1">
       <audio controls>
-          <source src="audiosamples/Loop_19.mp3" type="audio/mp3">
-             Ihr Browser unterstützte das "Audio"-Element nicht.
+          <source src="AudioSamples/Loop_11.mp3" type="audio/mp3">
+             Your browser does not support the audio element.
       </audio>
-      <a href="audiosamples/Loop_19.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:A minor, BPM:103</p>
    </div>
+
   <div class="audio-item">
-      <img src="images/MelodyCover.png" alt="Bild 2">
-      <div class="playbox">
+      <img src="Images/MelodyCover.png" alt="Bild 2">
        <audio controls>
-       <source src="audiosamples/loop_20.mp3" type="audio/mp3">
-              Ihr Browser unterstützte das "Audio"-Element nicht.
+       <source src="AudioSamples/loop_12.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
       </audio>
-      <a href="audiosamples/Loop_20.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:E minor, BPM:102</p>
+   </div>
+    
+  <div class="audio-item">
+      <img src="Images/MelodyCover.png" alt="Bild 2">
+      <audio controls>
+       <source src="AudioSamples/loop_18.mp3" type="audio/mp3">
+               Your browser does not support the audio element.
+      </audio>
+  </div>
+  </div>
+    
+  <br>
+
+  <div class="audio-group">
+    <div class="audio-item">
+      <img src="Images/MelodyCover.png" alt="Bild 1">
+      <audio controls>
+          <source src="AudioSamples/Loop_19.mp3" type="audio/mp3">
+             Your browser does not support the audio element.
+      </audio>
+   </div>
+
+  <div class="audio-item">
+      <img src="Images/MelodyCover.png" alt="Bild 2">
+       <audio controls>
+       <source src="AudioSamples/loop_20.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+      </audio>
    </div>
    <div class="audio-item">
-    <img src="images/MelodyCover.png" alt="Bild 2">
-    <div class="playbox">
+    <img src="Images/MelodyCover.png" alt="Bild 2">
      <audio controls>
-     <source src="audiosamples/Loop_21.mp3" type="audio/mp3">
-            Ihr Browser unterstützte das "Audio"-Element nicht.
+     <source src="AudioSamples/Loop_21.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
     </audio>
-    <a href="audiosamples/Loop_21.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:A minor, BPM:130</p>
  </div>
-    </div>
-    <br>
+  </div>
 
-    <!-- Combination Samples Abschnitt -->
+    
+    <br>
     <h2>Combination Samples</h2>
     <br>
+    
     <div class="audio-group">
       <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 1">
-        <div class="playbox">
+        <img src="Images/CombinationCover.png" alt="Bild 1">
         <audio controls>
-            <source src="audiosamples/Loop_7.mp3" type="audio/mp3">
-               Ihr Browser unterstützte das "Audio"-Element nicht.
+            <source src="AudioSamples/Loop_7.mp3" type="audio/mp3">
+               Your browser does not support the audio element.
         </audio>
-        <a href="audiosamples/Loop_7.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:F minor, BPM:142</p>
      </div>
+  
     <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 2">
-        <div class="playbox">
+        <img src="Images/CombinationCover.png" alt="Bild 2">
          <audio controls>
-         <source src="audiosamples/Loop_8.mp3" type="audio/mp3">
-                Ihr Browser unterstützte das "Audio"-Element nicht.
+         <source src="AudioSamples/Loop_8.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
         </audio>
-        <a href="audiosamples/Loop_8.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:D# minor, BPM:145</p>
      </div>
+      
     <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 2">
-        <div class="playbox">
+        <img src="Images/CombinationCover.png" alt="Bild 2">
         <audio controls>
-         <source src="audiosamples/Loop_9.mp3" type="audio/mp3">
-                 Ihr Browser unterstützte das "Audio"-Element nicht.
+         <source src="AudioSamples/Loop_9.mp3" type="audio/mp3">
+                 Your browser does not support the audio element.
         </audio>
-        <a href="audiosamples/Loop_9.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:Bb major, BPM:110</p>
     </div>
     </div>
-    <br>
-    <div class="audio-group">
-      <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 1">
-        <div class="playbox">
-        <audio controls>
-            <source src="audiosamples/Loop_1.mp3" type="audio/mp3">
-               Ihr Browser unterstützte das "Audio"-Element nicht.
-        </audio>
-        <a href="audiosamples/Loop_1.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:C minor, BPM:116</p>
-     </div>
-    <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 2">
-        <div class="playbox">
-         <audio controls>
-         <source src="audiosamples/Loop_3.mp3" type="audio/mp3">
-                Ihr Browser unterstützte das "Audio"-Element nicht.
-        </audio>
-        <a href="audiosamples/Loop_3.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:C major, BPM:109</p>
-     </div>
-    <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 2">
-        <div class="playbox">
-        <audio controls>
-         <source src="audiosamples/Loop_4.mp3" type="audio/mp3">
-                 Ihr Browser unterstützte das "Audio"-Element nicht.
-        </audio>
-        <a href="audiosamples/Loop_4.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:F minor, BPM:147</p>
-    </div>
-    </div>
-    <br>
-    <div class="audio-group">
-      <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 1">
-        <div class="playbox">
-        <audio controls>
-            <source src="audiosamples/Loop_5.mp3" type="audio/mp3">
-               Ihr Browser unterstützte das "Audio"-Element nicht.
-        </audio>
-        <a href="audiosamples/Loop_5.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:C minor, BPM:150</p>
-     </div>
-    <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 2">
-        <div class="playbox">
-         <audio controls>
-         <source src="audiosamples/Loop_15.mp3" type="audio/mp3">
-                Ihr Browser unterstützte das "Audio"-Element nicht.
-        </audio>
-        <a href="audiosamples/Loop_15.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:C minor, BPM:110</p>
-     </div>
-    <div class="audio-item">
-        <img src="images/CombinationCover.png" alt="Bild 2">
-        <div class="playbox">
-        <audio controls>
-         <source src="audiosamples/Loop_13.mp3" type="audio/mp3">
-                 Ihr Browser unterstützte das "Audio"-Element nicht.
-        </audio>
-        <a href="audiosamples/Loop_13.mp3"><img src="images/download.png" width="32" height="32" alt="Download"></a>
-        </div>
-        <p> Key:A minor, BPM:120</p>
-    </div>
-    </div>
-    <br>
-  </section>
 
-  <!-- Footer mit Urheberrechtsinformation und Erstellern -->
-  <footer>
-    <p>&copy; Echotune 2023.</p>
-    <p>erstellt von Johannes und Jonas, Informatik 10 Klanck, Gymnasium Lerchenfeld</p>
-  </footer>
+    <br>
+    
+    <div class="audio-group">
+      <div class="audio-item">
+        <img src="Images/CombinationCover.png" alt="Bild 1">
+        <audio controls>
+            <source src="AudioSamples/Loop_1.mp3" type="audio/mp3">
+               Your browser does not support the audio element.
+        </audio>
+     </div>
+  
+    <div class="audio-item">
+        <img src="Images/CombinationCover.png" alt="Bild 2">
+         <audio controls>
+         <source src="AudioSamples/Loop_3.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+        </audio>
+     </div>
+      
+    <div class="audio-item">
+        <img src="Images/CombinationCover.png" alt="Bild 2">
+        <audio controls>
+         <source src="AudioSamples/Loop_4.mp3" type="audio/mp3">
+                 Your browser does not support the audio element.
+        </audio>
+    </div>
+    </div>
+  
+    <br>
+
+    <div class="audio-group">
+      <div class="audio-item">
+        <img src="Images/CombinationCover.png" alt="Bild 1">
+        <audio controls>
+            <source src="AudioSamples/Loop_5.mp3" type="audio/mp3">
+               Your browser does not support the audio element.
+        </audio>
+     </div>
+  
+    <div class="audio-item">
+        <img src="Images/CombinationCover.png" alt="Bild 2">
+         <audio controls>
+         <source src="AudioSamples/loop_15.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+        </audio>
+     </div>
+      
+    <div class="audio-item">
+        <img src="Images/CombinationCover.png" alt="Bild 2">
+        <audio controls>
+         <source src="AudioSamples/Loop_13.mp3" type="audio/mp3">
+                 Your browser does not support the audio element.
+        </audio>
+    </div>
+    </div>
+    
+  </section>
+  
+  
+  <h2>Download Audio-Datei</h2>
+  <a href="AudioSamples\Loop_2.mp3" download>
+  <button>Download</button>
+  </a>
+      
+  </body>
+
 </body>
 </html>
