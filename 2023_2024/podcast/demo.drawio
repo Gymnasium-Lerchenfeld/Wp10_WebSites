@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="3X3J9Vd1azHLow8-c5n5" name="Podcast">
-        <mxGraphModel dx="1072" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="746" dy="461" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -290,11 +290,11 @@
         </mxGraphModel>
     </diagram>
     <diagram name="Podcast Daten" id="ffJ0DxZBaWL1UuIjNkPz">
-        <mxGraphModel dx="1072" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1148" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="vu3wlETepsl-Rbv80i23-0"/>
                 <mxCell id="vu3wlETepsl-Rbv80i23-1" parent="vu3wlETepsl-Rbv80i23-0"/>
-                <mxCell id="vu3wlETepsl-Rbv80i23-2" value="" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="vu3wlETepsl-Rbv80i23-1" vertex="1">
+                <mxCell id="vu3wlETepsl-Rbv80i23-2" value="Podcast" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="vu3wlETepsl-Rbv80i23-1" vertex="1">
                     <mxGeometry x="29" y="43" width="451" height="484" as="geometry"/>
                 </mxCell>
                 <mxCell id="vu3wlETepsl-Rbv80i23-3" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#E6FFCC;" parent="vu3wlETepsl-Rbv80i23-2" vertex="1">
@@ -1218,7 +1218,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="xStjR4rJoBoougoq0o05-0" value="" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="vu3wlETepsl-Rbv80i23-1" vertex="1">
-                    <mxGeometry x="890" y="560" width="290" height="480" as="geometry"/>
+                    <mxGeometry x="890" y="560" width="290" height="490" as="geometry"/>
                 </mxCell>
                 <mxCell id="xStjR4rJoBoougoq0o05-1" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#E6FFCC;" parent="xStjR4rJoBoougoq0o05-0" vertex="1">
                     <mxGeometry y="30" width="290" height="30" as="geometry"/>
