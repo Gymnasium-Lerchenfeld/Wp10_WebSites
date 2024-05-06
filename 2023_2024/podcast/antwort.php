@@ -15,12 +15,12 @@
     <?php
     // Datenbankverbindungsinformationen
     $servername = "localhost"; // oder IP-Adresse des Servers
-    $username = "GyleInf"; // Ihr MySQL-Benutzername
-    $password = "GyleInf"; // Ihr MySQL-Passwort
+    $username = "GyLeInf"; // Ihr MySQL-Benutzername
+    $password = "GyLeInf"; // Ihr MySQL-Passwort
     $database = "podcast"; // Der Name Ihrer Datenbank
  
     // Verbindung herstellen
-    $conn = new mysqli($servername, $username, $password, $database);
+    $conn = new mysqli_connect($servername, $username, $password, $database);
  
     // Verbindung überprüfen
     if ($conn->connect_error) {
