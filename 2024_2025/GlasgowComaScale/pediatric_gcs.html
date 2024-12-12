@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glasgow Coma Scale (GCS)</title>
+    <title>pediatric Glasgow Coma Scale</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,6 +41,9 @@
             max-width: 800px;
             margin: auto;
             padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         table {
@@ -54,7 +57,7 @@
         }
 
         th {
-            background-color: #6D8193;
+            background-color: #58728A;
             color: white;
             padding: 10px;
         }
@@ -70,9 +73,14 @@
             background-color: #e8f0fe;
             border-left: 5px solid: #6D8193;
         }
+            
+        }
+
+        
 
         footer {
             background-color: #6D8193;
+            background-color: ;
             color: white;
             text-align: center;
             padding: 10px;
@@ -85,18 +93,17 @@
 
 <body>
     <header>
-        <h1>Glasgow Coma Scale (GCS)</h1>
+        <h1>pediatric Glasgow Coma Scale</h1>
     </header>
     <nav>
         <a href="index.html">Startseite</a>
         <a href="pediatric_gcs.html">pediatric GCS</a>
     </nav>
     <div class="container">
-        <h2>Was ist die Glasgow Coma Scale?</h2>
+        <h2>Was ist die pediatric GCS?</h2>
         <p>
-            Die Glasgow Coma Scale (GCS) ist ein medizinisches Bewertungsinstrument zur Einschätzung des Bewusstseinszustands
-            eines Patienten. Es wird häufig in der Notfallmedizin und Neurochirurgie eingesetzt, um die Schwere von Kopfverletzungen
-            zu beurteilen.
+            Die pädiatrische Glasgow Coma Scale ist eine speziell angepasste Version der GCS für Säuglinge und Kleinkinder.
+            Sie berücksichtigt die unterschiedlichen Entwicklungsstadien, insbesondere in den verbalen und motorischen Reaktionen.
         </p>
         <h3>Bewertungskriterien</h3>
         <table>
@@ -128,19 +135,19 @@
                 <tr>
                     <td rowspan="5">Verbale Antwort</td>
                     <td>5</td>
-                    <td>Orientiert</td>
+                    <td>Lächelt oder brabbelt</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Verwirrt</td>
+                    <td>Weint, lässt sich beruhigen</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Unzusammenhängend</td>
+                    <td>Schreit unangemessen</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Unverständlich</td>
+                    <td>Unverständliche Laute</td>
                 </tr>
                 <tr>
                     <td>1</td>
@@ -149,19 +156,19 @@
                 <tr>
                     <td rowspan="6">Motorische Antwort</td>
                     <td>6</td>
-                    <td>Befolgt Befehle</td>
+                    <td>Normale Bewegungen</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>Lokalisiert Schmerz</td>
+                    <td>Zieht Schmerz zurück</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Beugereaktion</td>
+                    <td>Beugt auf Schmerz</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Streckreaktion</td>
+                    <td>Streckt auf Schmerz</td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -171,22 +178,21 @@
         </table>
         <div class="info-box">
             <p>
-                Die Gesamtpunktzahl wird berechnet, indem die Punkte aus den drei Kategorien (Augenöffnung, verbale Antwort und
-                motorische Antwort) addiert werden. 
+                Auch bei der pädiatrischen GCS werden die Punkte aus den Kategorien addiert, um eine Gesamtpunktzahl zu berechnen.
             </p>
             <p>
-                <strong>Auswertung der Punktzahl:</strong>
+                <strong>Auswertung:</strong>
                 <ul>
-                    <li>15 Punkte: Volles Bewusstsein</li>
-                    <li>13–14 Punkte: Leichte Beeinträchtigung</li>
-                    <li>9–12 Punkte: Mittlere Beeinträchtigung</li>
-                    <li>3–8 Punkte: Schweres Koma (intensivmedizinische Überwachung erforderlich)</li>
+                    <li>15 Punkte: Normales Bewusstsein</li>
+                    <li>9–14 Punkte: Bewusstseinsstörung</li>
+                    <li>3–8 Punkte: Schweres Koma</li>
                 </ul>
             </p>
         </div>
+        
     </div>
     <footer>
-        <p>&copy; 2024 Siri Ruhm</p>
+       
     </footer>
 </body>
 
