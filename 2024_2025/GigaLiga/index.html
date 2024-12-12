@@ -1,1 +1,102 @@
-Enter your code here
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giga Liga - Rennsport der Zukunft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/main.js" defer></script>
+</head>
+
+<body><!-- Die Navigationsleiste -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Giga Liga</a>
+            <ul class="nav-links">
+                <li><a href="news.html">Aktuelle News</a></li>
+                <li>
+                    <a href="teams.html">Teams und Fahrer</a>
+                    <div class="dropdown">
+                        <a href="otto.html">Otto Reinhart</a>
+                        <a href="feuer.html">Feuer</a>
+                        <a href="lytrox.html">Lytrox</a>
+                        <a href="aimbot.html">Aimbot</a>
+                        <a href="lamasmurf.html">Lamasmurf</a>
+                    </div>
+                </li>
+                <li><a href="standings.html">Standings</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Das hintergrundvideo -->
+    <section class="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="Videos/Informatik Highlights Monaco.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Willkommen zur Giga Liga</h1>
+            <p>Hier findest du alle aktuellen Infos!</p>
+            <a href="https://www.youtube.com/watch?v=mO9djxeG-f8" class="cta-btn">Jetzt Highlights anschauen!</a>
+        </div>
+    </section>
+<!-- Aktuelle News -->
+    <section id="news" class="section">
+
+        <div class="container">
+            <h2>Aktuelle GL-News</h2>
+            <p>Hier findest du die neuesten Nachrichten zur Formel 1.</p>
+            <div class="info-container">
+                <div class="info-box">
+                        <div class="info-background">
+                            <img src="bilder/Lytrox.png" alt="Bildbeschreibung">
+                        </div>
+                        <div class="info-content">
+                            <h3>(Noch keine News verfügbar)</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="info-box">
+                    <a href="news-rennformat.html">
+                        <div class="info-background">
+                            <img src="bilder/OttoReinhart.png" alt="Bildbeschreibung">
+                        </div>
+                        <div class="info-content">
+                            <h3>Otto Reinhart Dominanz!</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="info-box">
+                        <div class="info-background">
+                            <img src="bilder/GL MONACO 2023 RACE RESULTS.png" alt="Bildbeschreibung">
+                        </div>
+                        <div class="info-content">
+                            <h3>(Noch keine News verfügbar)</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Highltights zu den Rennen die gefahren wurden -->
+    <section id="gigaligahighlights" class="section highlights parallax">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Giga Liga Highlights</h2>
+            <ul class="highlights-list">
+                <li><a href="https://www.youtube.com/watch?v=E2Bh9iLmsTA">#BritishGP Highlights</a></li>
+                <li><a href="https://www.youtube.com/watch?v=mO9djxeG-f8">#MonacoGP Highlights</a></li>
+                <li>Singapore GP - Coming Soon</li>
+                <li>Brazil GP - Coming Soon</li>
+                <li>Qatar GP - Coming Soon</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Giga Liga. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>
