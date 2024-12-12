@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;    font-family: Impact,Arial, sans-serif;
+    font-weight: 600;
+}
+
+.titel{
+    font-size: 3vw;
+    background-color: #a3a3a3;
+    text-align: center;
+}
+
+.empty table{
+    border: 0;
+}
+
+.textkorper{
+    padding-left: 2;
+    text-align: center;
+}
+
+td{
+    margin-right: 4vw;
+    width: 5vw;
+    height: 4vw;
+    border: 2px solid #d0d0d0;
+    text-align: center;
+}
+
+.nichtmetall{
+   background-color:  #436fce
+}
+
+.alkali{
+    background-color: #ff0000;
+}
+
+.erdalkali{
+    background-color: #ffa500;
+}
+
+.ubergang{
+    background-color:  #ffff00;
+}
+
+.metall{
+    background-color: #51ce2c;
+}
+
+.halbmetall{
+    background-color: #0bbedd;
+}
+
+.halogen{
+    background-color: #fd1394;
+}
+.lantha{
+    background-color: #dd5d0e;
+}
+
+.edel{
+    background-color: #9e0cbb
+}
+
+.acti{
+    background-color: #8ade15
+}
+
+.chemiker_fantasie{
+    background-color: #a0a0a0;  
+}
