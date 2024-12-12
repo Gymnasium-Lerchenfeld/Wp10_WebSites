@@ -1,1 +1,121 @@
-Enter your code here
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heide Park Resort</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Willkommen im Heide Park Resort</h1>
+        <p>Erleben Sie Nervenkitzel und Familienspaß in einem der größten Freizeitparks Deutschlands!</p>
+    </header>
+
+    <nav>
+        <ul class="tabs">
+            <li class="tab-link active" data-tab="home">Home</li>
+            <li class="tab-link" data-tab="ueber-uns">Über uns</li>
+            <li class="tab-link" data-tab="attraktionen">Attraktionen</li>
+            <li class="tab-link" data-tab="preise">Preise</li>
+            <li class="tab-link" data-tab="kontakt">Kontakt</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="tab-content active">
+            <h2>Willkommen!</h2>
+            <p>Entdecken Sie spannende Attraktionen, Shows und unvergessliche Erlebnisse für die ganze Familie.</p>
+            <img src="images/2023_HeideparkSoltau.jpg" alt="Heide Park Willkommen" height="" width="750" >
+        </section>
+
+        <section id="ueber-uns" class="tab-content">
+            <h2>Über uns</h2>
+            <p>Der Heide Park Resort in Soltau, Niedersachsen, wurde 1978 eröffnet und ist heute einer der bekanntesten Freizeitparks in Deutschland. Die Geschichte des Parks begann mit dem Wunsch, einen Freizeitpark zu schaffen, der sowohl familienfreundliche Attraktionen als auch aufregende Fahrgeschäfte bietet. Zunächst unter dem Namen „Heide Park“ eröffnet, hat der Park seit seiner Gründung zahlreiche Erweiterungen und Themenbereiche erlebt, um sein Angebot ständig zu verbessern und neue Besucher anzulocken. Heute ist der Park Teil der internationalen Betreibergruppe Merlin Entertainments, die ihn kontinuierlich weiterentwickelt.
+
+                Der Heide Park ist für seine Vielfalt an Attraktionen bekannt. Zu den bekanntesten Fahrgeschäften gehört die Achterbahn „Colossos“, die als eine der höchsten und schnellsten Holzachterbahnen Europas gilt. Mit einer Höhe von 60 Metern und einer maximalen Geschwindigkeit von 110 km/h bietet „Colossos“ ein aufregendes Erlebnis für Thrill-Seeker. Ein weiteres Highlight ist die „Krake“, eine der wenigen Dive Coaster in Europa, bei der Fahrgäste aus großer Höhe in einen freien Fall stürzen. 
+                
+                Für Familien gibt es zahlreiche Attraktionen wie die „Bounty“, eine klassische Schiffsschaukel, oder den „Big Loop“, eine Eisenbahn-Achterbahn, die besonders für jüngere Besucher geeignet ist. Im Bereich der Wasserattraktionen sorgt die „Wildwasserbahn“ für eine erfrischende Abkühlung. Neben den Fahrgeschäften bietet der Park auch regelmäßige Shows, Veranstaltungen und thematische Erlebnisse, die das gesamte Jahr über für Unterhaltung sorgen. Außerdem ist der Park in verschiedenen Themenbereichen aufgeteilt. Dazu gehören „Exploria“, „Bucht der Piraten“, „Land der Vergessenen“ , „Transilvanien“, „Peppa Pig Land“ und „Wild wild West“. Durch diese Themenbereiche wird der Heide Park viel übersichtlicher und abenteuerlicher. 
+                
+                Mit einer stetig wachsenden Anzahl an Attraktionen und einem abwechslungsreichen Angebot an Shows und Events ist der Heide Park Resort ein beliebtes Ziel für Familien und Abenteuerlustige aus ganz Europa.</p>
+        </section>
+
+        <section id="attraktionen" class="tab-content">
+            <h2>Unsere Attraktionen</h2>
+            <section id="parkplan-link">
+                <h2>Parkplan</h2>
+                <p>Planen Sie Ihren Besuch mit unserem interaktiven Parkplan! Klicken Sie auf den Button unten, um den Parkplan zu sehen.</p>
+                <a href="parkplan.html" class="parkplan-button">Zum Parkplan</a>
+            </section>
+            
+                <li><strong>Colossos:</strong> Europas größte Holzachterbahn.</li>
+                <li><strong>Krake:</strong> Eine atemberaubende Fahrt mit einem 90°-Sturz.</li>
+                <li><strong>Scream:</strong> Der höchste Gyro-Drop-Tower Deutschlands.</li>
+                <li><strong>Peppa Pig Land:</strong> Perfekt für kleine Entdecker.</li>
+            </ul>
+        </section>
+
+        <section id="preise" class="tab-content">
+            <h2>Preise</h2>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Preis</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Erwachsene</td>
+                        <td>49€</td>
+                        <td>Gültig für Besucher ab 12 Jahren</td>
+                    </tr>
+                    <tr>
+                        <td>Kinder (bis 11 Jahre)</td>
+                        <td>39€</td>
+                        <td>Ermäßigte Preise für Kinder</td>
+                    </tr>
+                    <tr>
+                        <td>Familienpaket</td>
+                        <td>120€</td>
+                        <td>2 Erwachsene + 2 Kinder</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Sichern Sie sich jetzt Ihr Ticket und sparen Sie Zeit! Klicken Sie auf den Button unten, um Tickets zu kaufen.
+            </p>
+            <a href="ticket.html" class="ticket-button">Jetzt Ticket kaufen</a>
+        </section>
+        
+        
+
+        <section id="kontakt" class="tab-content">
+            <h2>Kontakt</h2>
+            <p><strong>Adresse:</strong> Heide Park Resort, 29614 Soltau, Deutschland</p>
+            <p><strong>Telefon:</strong> +49 123 456789</p>
+            <p><strong>Email:</strong> <a href="mailto:info@heidepark.de">info@heidepark.de</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Heide Park Resort. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        // JavaScript für Tab-Navigation
+        document.querySelectorAll('.tab-link').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Alle Tabs deaktivieren
+                document.querySelectorAll('.tab-link').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                // Aktiven Tab und zugehörigen Inhalt aktivieren
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
