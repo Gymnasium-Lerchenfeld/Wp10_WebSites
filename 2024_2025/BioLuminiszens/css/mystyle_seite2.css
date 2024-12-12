@@ -1,0 +1,41 @@
+body {
+    background-color: #011834;
+    }
+h1{
+    color: rgb(0, 0, 0);
+    background-color:rgb(224, 68, 118);
+}
+th {
+    color: #e7ddc1; /* Hexadecimal value */
+    }
+td {
+    color: #e7ddc1; /* Hexadecimal value */
+    }
+footer {
+     color:  #e7ddc1; /* Hexadecimal value */
+    }
+aside {
+        color:  #e7ddc1; /* Hexadecimal value */
+       }
+article{
+        color:  #e7ddc1; /* Hexadecimal value */
+       }
+title {
+        color:  #e7ddc1; /* Hexadecimal value */
+       }
+li {
+        color:  #e7ddc1; /* Hexadecimal value */
+       }
+ul {
+        color:  #e7ddc1; /* Hexadecimal value */
+       }
+nav {
+        color:  #e7ddc1; /* Hexadecimal value */
+       }
+       li{color:rgb(224, 68, 118);
+       }
+       a{color:rgb(224, 68, 118);
+       }
+       section {
+        color: rgb(1, 255, 255);
+    }

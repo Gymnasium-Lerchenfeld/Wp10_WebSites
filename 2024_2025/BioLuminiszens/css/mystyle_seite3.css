@@ -1,0 +1,27 @@
+p {
+    color: rgb(0, 0, 0);
+    background-color:rgb(224, 68, 118);
+}
+h1{
+    color: rgb(0, 0, 0);
+    background-color:rgb(224, 68, 118);
+}
+body {
+    background-color: #011834;
+}
+h2 {
+    color: rgb(1, 255, 255);
+}
+article{color: aliceblue;
+}
+footer{color: aliceblue;
+}
+aside{color: aliceblue;
+}
+header{color:beige;
+}
+li{color:rgb(224, 68, 118);
+}
+a{color:rgb(224, 68, 118);
+}
+has context menu
