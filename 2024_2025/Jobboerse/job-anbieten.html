@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job anbieten - KarriereKompass</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>KarriereKompass - Job anbieten</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="jobsuche.html">Jobsuche</a>
+        <a href="job-anbieten.html">Job anbieten</a>
+        <a href="about.html">Über uns</a>
+        <a href="hilfe.html">Hilfe & FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Bieten Sie Ihren Job an</h1>
+        <p>Erreichen Sie passende Kandidaten und füllen Sie Ihre offenen Stellen schnell aus. Nutzen Sie unsere Plattform, um gezielt qualifizierte Fachkräfte anzusprechen.</p>
+        <button onclick="document.querySelector('.form-section').scrollIntoView({ behavior: 'smooth' });">Jetzt Job anbieten</button>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <h2>Stellenangebot veröffentlichen</h2>
+        <form>
+            <label for="company">Unternehmensname</label>
+            <input type="text" id="company" name="company" placeholder="Name des Unternehmens" required>
+
+            <label for="job-title">Jobtitel</label>
+            <input type="text" id="job-title" name="job-title" placeholder="Jobtitel (z.B. Softwareentwickler)" required>
+
+            <label for="location">Standort</label>
+            <input type="text" id="location" name="location" placeholder="Standort (z.B. Berlin)" required>
+
+            <label for="job-type">Anstellungsart</label>
+            <select id="job-type" name="job-type" required>
+                <option value="">Wählen Sie eine Anstellungsart</option>
+                <option value="vollzeit">Vollzeit</option>
+                <option value="teilzeit">Teilzeit</option>
+                <option value="praktikum">Praktikum</option>
+                <option value="werkstudent">Werkstudent</option>
+                <option value="freiberuflich">Freiberuflich</option>
+            </select>
+
+            <label for="job-description">Jobbeschreibung</label>
+            <textarea id="job-description" name="job-description" rows="6" placeholder="Beschreiben Sie die Stelle und die Anforderungen..." required></textarea>
+
+            <label for="salary">Gehalt (optional)</label>
+            <input type="text" id="salary" name="salary" placeholder="z.B. 50.000€/Jahr">
+
+            <label for="contact-email">Kontakt E-Mail</label>
+            <input type="email" id="contact-email" name="contact-email" placeholder="Kontakt-E-Mail für Bewerbungen" required>
+
+            <button type="submit">Jobangebot veröffentlichen</button>
+        </form>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <h3>Warum KarriereKompass?</h3>
+        <p>KarriereKompass bietet Ihnen die Möglichkeit, Ihre offenen Stellen schnell und unkompliziert zu besetzen. Mit unserer Reichweite und unseren gezielten Suchfunktionen erreichen Sie die passenden Kandidaten.</p>
+        <p>Wir bieten Ihnen eine einfache Handhabung und viele zusätzliche Features.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KarriereKompass. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

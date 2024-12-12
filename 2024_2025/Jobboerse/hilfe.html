@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobbörse - Hilfe & FAQ</title>
+    
+       
+       <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jobbörse - Hilfe & FAQ</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="jobsuche.html">Jobsuche</a>
+        <a href="job-anbieten.html">Job anbieten</a>
+        <a href="about.html">Über uns</a>
+        <a href="hilfe.html">Hilfe & FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="container">
+        <h2>Häufig gestellte Fragen</h2>
+        <div class="faq">
+            <h3>Wie kann ich nach einem Job suchen?</h3>
+            <p>Nutzen Sie einfach unser Suchformular auf der Seite "Jobsuche". Geben Sie relevante Informationen wie den Jobtitel, das Unternehmen und den Ort ein und starten Sie die Suche.</p>
+            
+            <h3>Wie erstelle ich eine Stellenanzeige?</h3>
+            <p>Wenn Sie eine Stelle anbieten möchten, gehen Sie auf unsere Seite "Job anbieten" und füllen Sie das Formular mit allen wichtigen Angaben aus. Ihre Anzeige wird nach einer kurzen Prüfung veröffentlicht.</p>
+            
+            <!-- Neue Sektion für dynamische FAQs -->
+            <h3>Haben Sie eine andere Frage?</h3>
+            <div class="faq-input">
+                <input type="text" id="userQuestion" placeholder="Stellen Sie Ihre Frage hier..." />
+                <button onclick="getFAQResponse()">Frage stellen</button>
+            </div>
+            <p id="faqResponse"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jobbörse - Alle Rechte vorbehalten.</p>
+    </footer>
+
+    
+    <script>
+        function getFAQResponse() {
+            
+            const faqs = {
+                "wie kann ich mich registrieren": "Um sich zu registrieren, klicken Sie auf die Schaltfläche 'Registrieren' auf der Startseite und folgen Sie den Anweisungen.",
+                "wie kann ich mein passwort zurücksetzen": "Um Ihr Passwort zurückzusetzen, klicken Sie auf 'Passwort vergessen?' und folgen Sie den Anweisungen.",
+                "wie kann ich mein profil bearbeiten": "Gehen Sie zu Ihrem Profil und klicken Sie auf 'Profil bearbeiten', um Ihre Daten zu aktualisieren.",
+                "wie lange dauert es, bis meine stellenanzeige veröffentlicht wird": "Ihre Anzeige wird in der Regel innerhalb von 24 Stunden nach der Überprüfung veröffentlicht.",
+                "was kostet eine stellenanzeige": "Die Schaltung einer Stellenanzeige ist kostenlos. Für besondere Hervorhebungen bieten wir jedoch Premium-Pakete an.",
+                "wie kann ich kontakt zum unternehmen aufnehmen": "Sobald Sie sich auf einen Job beworben haben, wird der Kontakt über das Nachrichtensystem hergestellt.",
+                "was tun, wenn ich mein passwort vergessen habe": "Klicken Sie auf 'Passwort vergessen' und folgen Sie den Anweisungen, um ein neues Passwort zu setzen.",
+                "wie lösche ich mein konto": "Um Ihr Konto zu löschen, gehen Sie zu Ihren Kontoeinstellungen und klicken Sie auf 'Konto löschen'.",
+                "wie bearbeite ich meine bewerbung": "Gehen Sie zu 'Meine Bewerbungen', wählen Sie die Bewerbung aus, die Sie bearbeiten möchten, und klicken Sie auf 'Bearbeiten'.",
+                "wie kann ich benachrichtigungen deaktivieren": "Gehen Sie zu Ihren Benachrichtigungseinstellungen und deaktivieren Sie die Optionen, für die Sie keine E-Mails erhalten möchten.",
+                "wie finde ich jobs in meiner nähe": "Nutzen Sie die Standortfilter in der Job-Suche, um nach Jobs in Ihrer Nähe zu suchen.",
+                "wie erstelle ich ein professionelles profil": "Achten Sie darauf, alle relevanten Informationen auszufüllen und ein professionelles Profilbild hochzuladen.",
+                "wie ändere ich meine e-mail-adresse": "Gehen Sie zu Ihren Kontoeinstellungen und aktualisieren Sie dort Ihre E-Mail-Adresse.",
+                "wie lade ich meinen lebenslauf hoch": "Gehen Sie zu Ihrem Profil und klicken Sie auf 'Lebenslauf hochladen', um eine Datei hinzuzufügen.",
+                "wie erfahre ich von neuen stellenangeboten": "Abonnieren Sie den Job-Newsletter oder richten Sie sich Job-Alarme ein, um benachrichtigt zu werden."
+            };
+
+            
+            const userQuestion = document.getElementById("userQuestion").value.toLowerCase();
+            const faqResponse = document.getElementById("faqResponse");
+
+            
+            if (faqs[userQuestion]) {
+                faqResponse.textContent = faqs[userQuestion];
+            } else {
+                faqResponse.textContent = "Leider haben wir momentan keine Antwort auf Ihre Frage. Bitte wenden Sie sich an unseren Support.";
+            }
+        }
+    </script>
+</body>
+</html>

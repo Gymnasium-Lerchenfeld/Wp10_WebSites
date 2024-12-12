@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KarriereKompass</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jobbörse - Ihre Karriere beginnt hier</h1>
+        <a href="login.html" class="login-button">Login</a> <!-- Login Button in the top-right corner -->
+    </header>
+
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="jobsuche.html">Jobsuche</a>
+        <a href="job-anbieten.html">Job anbieten</a>
+        <a href="career-advice.html">Karriere-Beratung</a>
+        <a href="job-quiz.html">Job-Empfehlung Quiz</a>
+        <a href="top-companies.html">Top-Firmen entdecken</a>
+        <a href="about.html">Über uns</a>
+        <a href="hilfe.html">Hilfe & FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <section class="hero-section">
+        <h1>Finden Sie Ihren Traumjob oder den perfekten Kandidaten</h1>
+        <p>Eine Plattform, der Sie vertrauen können. Einfach, sicher und effektiv.</p>
+        <a href="jobsuche.html" class="cta-button">Jetzt Jobs suchen</a>
+    </section>
+
+    <div class="container interactive-section">
+        <h2>Interaktive Funktionen</h2>
+        <div class="interactive-buttons">
+            <a href="career-advice.html" class="interactive-button">Karriere-Beratung</a>
+            <a href="job-quiz.html" class="interactive-button">Job-Empfehlung Quiz</a>
+            <a href="top-companies.html" class="interactive-button">Top-Firmen entdecken</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Warum unsere Jobbörse?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Sichere Daten</h3>
+                <p>Ihre persönlichen Informationen sind bei uns dank SSL-Verschlüsselung sicher.</p>
+            </div>
+            <div class="feature">
+                <h3>Vertrauenswürdige Partner</h3>
+                <p>Wir arbeiten mit führenden Unternehmen zusammen, um Ihnen die besten Jobangebote zu bieten.</p>
+            </div>
+            <div class="feature">
+                <h3>Schnelle Bewerbung</h3>
+                <p>Finden Sie Stellenangebote und bewerben Sie sich in wenigen Minuten.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jobbörse. Alle Rechte vorbehalten.</p>
+        <p><a href="datenschutz.html">Datenschutz</a> | <a href="impressum.html">Impressum</a></p>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        ↑
+    </div>
+
+    <script>
+        // Sticky header and nav
+        window.onscroll = function() {
+            const header = document.querySelector('header');
+            const nav = document.querySelector('nav');
+            const backToTop = document.getElementById('backToTop');
+
+            if (window.pageYOffset > 50) {
+                header.classList.add('smaller');
+                nav.style.top = '45px'; // Adjusted to maintain visibility
+                backToTop.style.display = 'block'; // Show back-to-top button
+            } else {
+                header.classList.remove('smaller');
+                nav.style.top = '65px';
+                backToTop.style.display = 'none'; // Hide back-to-top button
+            }
+        };
+
+        // Back to top button functionality
+        document.getElementById('backToTop').onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+</body>
+</html>
