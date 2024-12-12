@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Overclocked Games - About TopDownRPG</title>
+    <!--Script implementation for the dropdown-menus-->
+    <script src="js/NavBar_DropDownMenus.js"></script>
+    <!--Script implementation for the TextNavigation-->
+    <script src="js/AboutTDRPG_TextNavigation.js"></script>
+  </head>
+  <body>
+
+    <!-- navigation -->
+    <nav>
+      <!--Unordered list to make the buttons ordered from left to right in the navbar-->
+      <ul class="ButtonList">
+        
+        <!-- normal nav_buttons -->
+        <li>
+          <div class="ProjectSDropdown">
+            <!--Button to acces index.html (Button instead of 'a' to get the same look as the menus)-->
+            <button onclick="location.href='index.html'" class="ProjectSdropbtn">
+              Overclocked Games
+            </button>
+          </div>
+        </li>
+        
+        <!-- DropdownMenus -->
+
+        <li>
+          <!--Div to wrap around the button in order to make it easier to change disappearance-->
+          <div onmouseleave="HideAllDropdown()" class="ProjectSDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); ProjectSDropDownFunc()" class="ProjectSdropbtn" id="ProjectSArrowParent">
+              ProjectS <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_ProjectSDropdown" class="ProjectSdropdown-content">
+              <a href="AboutProjectS.html">General Info</a>
+              <a href="AboutProjectSBiomes.html">Biomes</a>
+              <a href="Devlog_ProjectS.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div onmouseleave="HideAllDropdown()" class="TDRPGDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); TDRPGDropDownFunc()" class="TDRPGdropbtn" id="TDRPGArrowParent">
+              TopDownRPG <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_TDRPGDropdown" class="TDRPGdropdown-content">
+              <a href="AboutTopDownRPG.html">General Info</a>
+              <a href="AboutTopDownRPGDimensions.html">Dimensions</a>
+              <a href="Devlog_TopDownRPG.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>   
+    </nav>
+
+    <!--Text navigation-->
+
+    <!--Table to order the text to change and the buttons that change it side by side-->
+    <table class="TextTable">
+      <td>
+        <!-- Text Navigation button list -->
+        <ul class="TextNavList">
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ABOUTTDRPG_ChangeText1()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ABOUTTDRPG_ChangeText1()">General Info</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ABOUTTDRPG_ChangeText2()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ABOUTTDRPG_ChangeText2()">The Backstory</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ABOUTPROJECTS_ChangeText3()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ABOUTTDRPG_ChangeText3()">The playable story</button>
+            </div>
+          </li>
+        </ul>
+      </td>
+
+      <td>
+        <!-- article - main text to change --> 
+        <article class="MainText" id="ABOUTTDRPG_MainText">
+          <!--Text to show by default when openning the website-->
+          <h1>What is the 'Top Down RPG'?</h1>
+          'Top Down RPG' is the placeholder name for the first game set in th universe of the 'Overclocked Games' universe. It takes place after the <a href="AboutProjectS.html">backstory of Project S.</a> <p></p>
+          It's a game game with a lot of different dimensions and two different camera-anges: wide third person and top down. One angle is for fighting, one for exploring. <p></p>
+          The artstyle is more drawn/comiclike. The cutscenes look like someone is drawing them as they play out, sometimes the camera even zooms out of the game onto a piece of paper, on which the story is drawn.
+          <h1>Where does the game take place?</h1>
+          The game startes in a different dimention then the one in <a href="AboutProjectS.html"> Project S</a> in a rural area close to a big forrest. As the story progresses, the player visits <a href="AboutTopDownRPGDimensions.html">multipe dimentions.</a>
+        </article>
+      </td>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Overclocked Games - About TopDownRPG</title>
+    <!--Script implementation for the dropdown-menus-->
+    <script src="js/NavBar_DropDownMenus.js"></script>
+  </head>
+  <body>
+
+<!-- navigation -->
+    <nav>
+      <!--Unordered list to make the buttons ordered from left to right in the navbar-->
+      <ul class="ButtonList">
+        
+        <!-- normal nav_buttons -->
+        <li>
+          <div class="ProjectSDropdown">
+            <!--Button to acces index.html (Button instead of 'a' to get the same look as the menus)-->
+            <button onclick="location.href='index.html'" class="ProjectSdropbtn">
+              Overclocked Games
+            </button>
+          </div>
+        </li>
+        
+        <!-- DropdownMenus -->
+
+        <li>
+          <!--Div to wrap around the button in order to make it easier to change disappearance-->
+          <div onmouseleave="HideAllDropdown()" class="ProjectSDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); ProjectSDropDownFunc()" class="ProjectSdropbtn" id="ProjectSArrowParent">
+              ProjectS <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_ProjectSDropdown" class="ProjectSdropdown-content">
+              <a href="AboutProjectS.html">General Info</a>
+              <a href="AboutProjectSBiomes.html">Biomes</a>
+              <a href="Devlog_ProjectS.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+    
+        <li>
+          <div onmouseleave="HideAllDropdown()" class="TDRPGDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); TDRPGDropDownFunc()" class="TDRPGdropbtn" id="TDRPGArrowParent">
+              TopDownRPG <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_TDRPGDropdown" class="TDRPGdropdown-content">
+              <a href="AboutTopDownRPG.html">General Info</a>
+              <a href="AboutTopDownRPGDimensions.html">Dimensions</a>
+              <a href="Devlog_TopDownRPG.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>   
+    </nav>
+     
+<!-- article -->     
+<article class="MainText">
+  <!--Main Text-->
+  <h1>Dimensions</h1>
+
+  <p></p>
+
+  Dimensions are still to be worked on. <Br>
+  Come back later when we have gathered enough ideas!
+</article>
+
+<!-- aside -->
+<aside>
+
+</aside>
+ 
+
+<!-- footer -->
+<footer>
+
+</footer>
+
+
+  </body>
+</html>

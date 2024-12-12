@@ -1,0 +1,279 @@
+/* change backgroundcolor of whole website to black */
+html {background-color: black;}
+
+/* Create the font mainly used in our website */
+@font-face {
+    font-family: "CoderFont";
+    src: url("../Fonts/PCBius.ttf");
+}
+
+/* A general class for the look of the text in general */
+.MainText {
+    background-color: #191919;
+    justify-content: center;
+    border: 2px double grey;
+    color: greenyellow;
+    text-align: center;
+    font-family: CoderFont;
+    font-size: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* Class to center the table on the mainpage containing both images */
+.ImageTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Class for the imageContainer containing the images on the mainpage */
+.HomepageImgContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Change scale on hover */
+.HomepageImgContainer:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Center the text in a container in another container to display over image */
+.HomepageImageCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: xx-large;
+}
+
+/* Appearance of mainpage images */
+.HomepageImage {
+  opacity: 0.5;
+  border-radius: 15px;
+  width: 600;
+  height: 450;
+}
+
+/* Change properties of buttonList in the nav-bar */
+.ButtonList {
+  /* hide the DropdownMenus content */
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  padding: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+
+.ButtonList button {
+  font-size: larger;
+}
+
+.ButtonList a {
+  font-size: larger;
+}
+
+/* properties of the TextNavigation  */
+
+/* Table properties */
+.TextTable {
+  margin-left: 5px;
+}
+
+.TextTable td{
+  vertical-align: top;
+  min-width: 250px;
+}
+
+/* Button list of the TextNavigation */
+.TextNavList {
+  overflow: show;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  padding: 0;
+  border-radius: 5px;
+}
+
+/* Container wrapping around the TextNavigation buttons */
+.TextNavContainer {
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 10px;
+  border-color: green;
+  transform-origin: left;
+  border-width: 1px;
+}
+
+/* Scale bigger on hover */
+.TextNavContainer:hover {
+  animation-name: BiggerOnHover;
+  animation-duration: 0.5s;
+  transform: scale(1.1);
+  background-color: #111;
+}
+
+/* animation to scale bigger */
+@keyframes BiggerOnHover{
+  from {
+    transform: scale(1);
+    border-radius: 1px;
+  }
+  to {
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
+}
+
+/* Text navigation buttons */
+.TextNavList button {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+  font-size: x-large;
+  
+}
+
+/* ProjectS DropDown classes */
+
+.ProjectSDropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.ProjectSdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ProjectSdropbtn {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.ProjectSdropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+/* TopDownRPG Dropdown classes */
+
+.TDRPGDropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.TDRPGdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.TDRPGdropbtn {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.TDRPGdropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+/* Arrow animation on hovering dropdown menu buttons */
+
+.arrow{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  animation-name: arrowDown;
+  animation-duration: 0.25s;
+  animation-direction: normal;
+}
+
+@keyframes arrowDown{
+  from {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  to {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes arrowUp{
+  from {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+}
+  
+
+
+/* Change background color to black when hovering */
+.ButtonList a:hover, .ProjectSDropdown:hover, .ProjectSdropbtn:hover, .TDRPGDropdown:hover, .TDRPGdropbtn:hover, .TDRPGdropdown-content a:hover {
+  background-color: #111;
+} 
+
+/* Change rotation and play animation on hover */
+.ProjectSDropdown:hover > .ProjectSdropbtn > .arrow {
+  animation-name: arrowUp;
+  animation-duration: 0.25s;
+  animation-direction: normal;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.TDRPGDropdown:hover > .TDRPGdropbtn > .arrow {
+  animation-name: arrowUp;
+  animation-duration: 0.25s;
+  animation-direction: normal;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+/* Class to hide and show the hidden content of the dropdonw menus */
+.show {display: block;}

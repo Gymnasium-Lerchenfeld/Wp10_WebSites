@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Overclocked Games - About ProjectS - Biomes</title>
+    <!--Script implementation for the dropdown-menus-->
+    <script src="js/NavBar_DropDownMenus.js"></script>
+    <!--Script implementation for the TextNavigation-->
+    <script src="js/ProjectSBiomes_TextNavigation.js"></script>
+  </head>
+  <body>
+
+    <!-- navigation -->
+    <nav>
+      <!--Unordered list to make the buttons ordered from left to right in the navbar-->
+      <ul class="ButtonList">
+        
+        <!-- normal nav_buttons -->
+        <li>
+          <div class="ProjectSDropdown">
+            <!--Button to acces index.html (Button instead of 'a' to get the same look as the menus)-->
+            <button onclick="location.href='index.html'" class="ProjectSdropbtn">
+              Overclocked Games
+            </button>
+          </div>
+        </li>
+        
+        <!-- DropdownMenus -->
+
+        <li>
+          <!--Div to wrap around the button in order to make it easier to change disappearance-->
+          <div onmouseleave="HideAllDropdown()" class="ProjectSDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); ProjectSDropDownFunc()" class="ProjectSdropbtn" id="ProjectSArrowParent">
+              ProjectS <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_ProjectSDropdown" class="ProjectSdropdown-content">
+              <a href="AboutProjectS.html">General Info</a>
+              <a href="AboutProjectSBiomes.html">Biomes</a>
+              <a href="Devlog_ProjectS.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div onmouseleave="HideAllDropdown()" class="TDRPGDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); TDRPGDropDownFunc()" class="TDRPGdropbtn" id="TDRPGArrowParent">
+              TopDownRPG <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_TDRPGDropdown" class="TDRPGdropdown-content">
+              <a href="AboutTopDownRPG.html">General Info</a>
+              <a href="AboutTopDownRPGDimensions.html">Dimensions</a>
+              <a href="Devlog_TopDownRPG.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>   
+    </nav>
+        
+    <!-- article -->     
+    <article class="MainText">
+      <!--Text to give general information-->
+      <h1>ProjectS Biomes</h1>
+      The game is taking place on an island far from civilisation.
+      <p>
+      Since the game will be pretty long we have settled on the idea of different biomes to make place for a lot of variation. 
+      <p>
+      At the start we came up with a lot of normal biomes that are often used in Fantasy games, such as forests, planes, big cave systems and mountains. 
+      <p>
+      We wanted the world to feel very large, so we decided to use many large landscapes. 
+      <p>
+      Since the game should be taking place in a fantasy world with magic and monsters, there also had to be other, more vibrant and exotic biomes...
+    </article>
+
+    <p></p>
+
+    <!--Text navigation-->
+
+    <!--Table to order the text to change and the buttons that change it side by side-->
+    <table class="TextTable">
+      <td>
+        <!-- Text Navigation button list -->
+        <ul class="TextNavList">
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ProjectSBiome_ChangeText1()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ProjectSBiome_ChangeText1()">Forest Biome</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ProjectSBiome_ChangeText2()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ProjectSBiome_ChangeText2()">Cave Biome</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ProjectSBiome_ChangeText3()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ProjectSBiome_ChangeText3()">Desert Biome</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ProjectSBiome_ChangeText4()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ProjectSBiome_ChangeText4()">Magic Biome</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ProjectSBiome_ChangeText5()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ProjectSBiome_ChangeText5()">Lava Biome</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ProjectSBiome_ChangeText6()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ProjectSBiome_ChangeText6()">Mountain Biome</button>
+            </div>
+          </li>
+          <li><!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ProjectSBiome_ChangeText1()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ProjectSBiome_ChangeText7()">Wide Plains Biome</button>
+            </div>
+          </li>
+        </ul>
+      </td>
+    
+      <td>
+        <!-- Main Text to change --> 
+        <article class="MainText" id="ProjectSBiome_MainText">
+          <!--default text to show when openning the website-->
+          <h1>Choose a biome to get more info.</h1>
+        </article>
+      </td>
+    </table>
+
+  </body>
+</html>

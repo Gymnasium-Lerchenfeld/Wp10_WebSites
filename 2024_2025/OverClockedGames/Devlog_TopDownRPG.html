@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Overclocked Games - About TopDownRPG</title>
+    <!--Script implementation for the dropdown-menus-->
+    <script src="js/NavBar_DropDownMenus.js"></script>
+  </head>
+  
+  <body>
+    <!-- navigation -->
+    <nav>
+      <!--Unordered list to make the buttons ordered from left to right in the navbar-->
+      <ul class="ButtonList">
+        
+        <!-- normal nav_buttons -->
+        <li>
+          <div class="ProjectSDropdown">
+            <!--Button to acces index.html (Button instead of 'a' to get the same look as the menus)-->
+            <button onclick="location.href='index.html'" class="ProjectSdropbtn">
+              Overclocked Games
+            </button>
+          </div>
+        </li>
+        
+        <!-- DropdownMenus -->
+
+        <li>
+          <!--Div to wrap around the button in order to make it easier to change disappearance-->
+          <div onmouseleave="HideAllDropdown()" class="ProjectSDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); ProjectSDropDownFunc()" class="ProjectSdropbtn" id="ProjectSArrowParent">
+              ProjectS <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_ProjectSDropdown" class="ProjectSdropdown-content">
+              <a href="AboutProjectS.html">General Info</a>
+              <a href="AboutProjectSBiomes.html">Biomes</a>
+              <a href="Devlog_ProjectS.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div onmouseleave="HideAllDropdown()" class="TDRPGDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); TDRPGDropDownFunc()" class="TDRPGdropbtn" id="TDRPGArrowParent">
+              TopDownRPG <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_TDRPGDropdown" class="TDRPGdropdown-content">
+              <a href="AboutTopDownRPG.html">General Info</a>
+              <a href="AboutTopDownRPGDimensions.html">Dimensions</a>
+              <a href="Devlog_TopDownRPG.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>   
+    </nav>
+        
+    <!-- article -->     
+    <article class="MainText">
+      <h1>Devlog_TopDownRPG</h1>
+      <p></p>
+
+      <!--Table to order image and text side by side-->
+      <table>
+        <td>
+          <img src="images/TDRPG.png" width="600" height="450">
+        </td>
+
+        <td>
+          After gathering enough information for the game we startet thinking about how and where to start developing the game. <p>
+          We first startet thinking about the art-style of the game. This was a difficult question because it defined how complex the models and textures for the game should be. <br>
+          The art-style is also a very important aspect of the gameplay as it defines how the player sees our world. <p>
+          After a bit of thinking we settled on a more drawn-like and lowpoly style because it captured our intentions of how the game should feel very well. <br>
+          Thats why we startet getting some drawings done to get refference for modelling and to get a first impression of the style which you can see in the image on the left. <br>
+          Thats also the scene where the player first finds the sword.
+        </td>
+      </table>
+
+      <p></p>
+      <h2>The First Models</h2>
+      <p></p>
+
+      <!--Table to order image and text side by side-->
+      <table>
+        <td>
+          <img src="images/TDRPGFirstCharModel.png" width="600" height="450">
+        </td>
+        <td>
+          After we settled on the art-style it was time to start working on the models. <br>
+          The first tries were very hard because it was our first time making human models. <br>
+          The proportions were a mess. The hardest part was getting the nose done and good topology in order to animate later on. <br>
+          After a lot of trial and error we had a model that was somewhat okay but not perfect. That is the model your seing at the side. <br>
+          Even though it wasn't that bad it wasnt really the thing we were searching for which is why its going to change in the future.
+        </td>
+      </table>
+      
+      <h2>Initial development</h2>
+
+      After we got all the ideas together we started to develop the game. <br>
+      At first it was planned to use the game engine 'Godot' but after unity announced Unity6 we didnt hesitate to witch to that engine since it has a lot of advantages. <br>
+      We started by programming a simple character and camera controller.
+      After that was done we settled on the idea of creating a prototype with graphics and gameplay to see what worked and what not. <br>
+      Thats why we started thinking about models again. We wanted the first model to be the upgrade-location for the players sword.
+      <p></p>
+
+      <h2>The Second Model</h2>
+      <p></p>
+
+      <!--Table to order image and text side by side-->
+      <table>
+        <td>
+          <img src="images/BlacksmithGodRef.png" width="600" height="450">
+        </td>
+        <td>
+          After a little break we startet to think again about the story and gameplay. <p>
+          The image your seeing on the left is a blacksmith-god who is the only one who has the power to upgrade the sword of the Player. <p>
+          This was a refference drawing for the final model. <p></p>
+        </td>
+      </table>
+
+      <p></p>
+
+      <!--Table to order image and text side by side-->
+      <table>
+        <td>
+          We started by modelling the character after the refference. <p></p>
+          This took a few days to complete. After the model was finished we had to texture it. <p></p>
+          To get the kind of lava-effect on the body we used a random-noise texture to get the rough black details. <p></p>
+          This texture was then blurred to really make the effect more believable. This wont be the final texture but it is a start. <p></p>
+          We also rigged the arms to make it easy to animate them.
+        </td>
+        <td>
+          <img src="images/BlacksmithGodNoTexture.png" width="600" height="400">
+        </td>
+      </table>
+
+      <h2>The final outcome of the model:</h2>
+      <!--Concluding image-->
+      <img src="images/BlacksmithGodWithTexture.png" width="800" height="500">
+    </article>
+  </body>
+</html>

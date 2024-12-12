@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Overclocked Games - About ProjectS</title>
+    <!--Script implementation for the dropdown-menus-->
+    <script src="js/NavBar_DropDownMenus.js"></script>
+    <!--Script implementation for the TextNavigation-->
+    <script src="js/AboutProjectS_TextNavigation.js"></script>
+  </head>
+  <body>
+  
+    <!-- navigation -->
+    <nav>
+      <!--Unordered list to make the buttons ordered from left to right in the navbar-->
+      <ul class="ButtonList">
+        
+        <!-- normal nav_buttons -->
+        <li>
+          <div class="ProjectSDropdown">
+            <!--Button to acces index.html (Button instead of 'a' to get the same look as the menus)-->
+            <button onclick="location.href='index.html'" class="ProjectSdropbtn">
+              Overclocked Games
+            </button>
+          </div>
+        </li>
+        
+        <!-- DropdownMenus -->
+
+        <li>
+          <!--Div to wrap around the button in order to make it easier to change disappearance-->
+          <div onmouseleave="HideAllDropdown()" class="ProjectSDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); ProjectSDropDownFunc()" class="ProjectSdropbtn" id="ProjectSArrowParent">
+              ProjectS <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_ProjectSDropdown" class="ProjectSdropdown-content">
+              <a href="AboutProjectS.html">General Info</a>
+              <a href="AboutProjectSBiomes.html">Biomes</a>
+              <a href="Devlog_ProjectS.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div onmouseleave="HideAllDropdown()" class="TDRPGDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); TDRPGDropDownFunc()" class="TDRPGdropbtn" id="TDRPGArrowParent">
+              TopDownRPG <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_TDRPGDropdown" class="TDRPGdropdown-content">
+              <a href="AboutTopDownRPG.html">General Info</a>
+              <a href="AboutTopDownRPGDimensions.html">Dimensions</a>
+              <a href="Devlog_TopDownRPG.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+      </ul>   
+    </nav>
+
+
+    <!--Table to order the text to change and the buttons that change it side by side-->
+    <table class="TextTable">
+      <td>
+        <!-- Text Navigation button list -->
+        <ul class="TextNavList">
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ABOUTPROJECTS_ChangeText1()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ABOUTPROJECTS_ChangeText1()">General Info</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ABOUTPROJECTS_ChangeText2()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ABOUTPROJECTS_ChangeText2()">Beginning of the Story</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ABOUTPROJECTS_ChangeText3()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ABOUTPROJECTS_ChangeText3()">The Backstory</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ABOUTPROJECTS_ChangeText4()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ABOUTPROJECTS_ChangeText4()">The playable story</button>
+            </div>
+          </li>
+          <li>
+            <!--Container to make editing the button easier-->
+            <div class="TextNavContainer" onclick="ABOUTPROJECTS_ChangeText5()">
+              <!--Button to call script function to change the main text-->
+              <button onclick="ABOUTPROJECTS_ChangeText5()">The actual Gameplay</button>
+            </div>
+          </li>
+        </ul>
+      </td>
+
+      <td>
+        <!-- article --> 
+        <article class="MainText" id="ABOUTPROJECTS_MainText">
+          <!--Text to show by default-->
+          <h1>What is "Project S"?</h1>
+            <p></p>
+            "Project S" is the codename for the main game of Overclocked Games.<br>
+            The "S" stands for "Soulslike game".<p></p>
+            It's a third-person open world game with a big combat and story aspect. More on that later.<p></p>
+          <h1>Where does the game take place?</h1>
+            <p></p>
+            The game takes place on an island far away from any land or civilization. It's devided into multiple biomes, each one a different biome theme, e.g. a desert.<p></p>
+        </article>
+      </td>
+    </table>
+
+  </body>
+</html>

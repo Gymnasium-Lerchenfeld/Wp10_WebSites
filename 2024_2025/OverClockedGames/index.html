@@ -1,1 +1,107 @@
-Enter your code here
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Overclocked Games - Official Website</title>
+    <!--Script implementation for the dropdown-menus-->
+    <script src="js/NavBar_DropDownMenus.js"></script>
+  </head>
+  <body>
+
+    <!-- navigation -->
+    <nav>
+      <!--Unordered list to make the buttons ordered from left to right in the navbar-->
+      <ul class="ButtonList">
+        
+        <!-- normal nav_buttons -->
+        <li>
+          <div class="ProjectSDropdown">
+            <!--Button to acces index.html (Button instead of 'a' to get the same look as the menus)-->
+            <button onclick="location.href='index.html'" class="ProjectSdropbtn">
+              Overclocked Games
+            </button>
+          </div>
+        </li>
+        
+        <!-- DropdownMenus -->
+
+        <li>
+          <!--Div to wrap around the button in order to make it easier to change disappearance-->
+          <div onmouseleave="HideAllDropdown()" class="ProjectSDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); ProjectSDropDownFunc()" class="ProjectSdropbtn" id="ProjectSArrowParent">
+              ProjectS <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_ProjectSDropdown" class="ProjectSdropdown-content">
+              <a href="AboutProjectS.html">General Info</a>
+              <a href="AboutProjectSBiomes.html">Biomes</a>
+              <a href="Devlog_ProjectS.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+    
+        <li>
+          <div onmouseleave="HideAllDropdown()" class="TDRPGDropdown">
+            <!--Button to open menu on hover-->
+            <button onmouseenter="HideAllDropdown(); TDRPGDropDownFunc()" class="TDRPGdropbtn" id="TDRPGArrowParent">
+              TopDownRPG <i class="arrow"></i>
+            </button>
+
+            <!--Menu content - not visible if not shown-->
+            <div id="ID_TDRPGDropdown" class="TDRPGdropdown-content">
+              <a href="AboutTopDownRPG.html">General Info</a>
+              <a href="AboutTopDownRPGDimensions.html">Dimensions</a>
+              <a href="Devlog_TopDownRPG.html">Devlog</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>   
+    </nav>
+
+    <main>
+      <!--Table to order the images side by side-->
+      <table class="ImageTable">
+        <td>
+          <!--div to change the location of the text in the middle of the image-->
+          <div class="HomepageImgContainer" onclick="location.href='AboutTopDownRPG.html'">
+            <img src="images/TDRPG.png" alt="Top Down RPG Image" width="600" height="450" class="HomepageImage">
+            <!--Container to place the text over the image-->
+            <div class="HomepageImageCenter">TopDownRPG</div>
+          </div> 
+        </td>
+
+        <td>
+          <!--div to change the location of the text in the middle of the image-->
+          <div class="HomepageImgContainer" onclick="location.href='AboutProjectS.html'">
+            <img src="images/ProjectS.jpg" alt="ProjectS Image" width="600" height="450" class="HomepageImage">
+            <!--Container to place the text over the image-->
+            <div class="HomepageImageCenter">ProjectS</div>
+          </div>
+        </td>
+      </table>
+
+      <!-- article -->     
+      <article class="MainText">
+        <!--MainText-->
+        <h1>About us</h1>
+        <p>We are a small game studio of two people.</p>
+        <p>Overclocked Games was founded on the 28th of september 2023 when we had the idea of developing a videogame.</p>
+        <p>This idea continued growing over the next month until we had the rough idea of the story for two seperate games.</p>
+      </article>
+    </main>
+
+    <!-- aside -->
+    <aside>
+    </aside>
+        
+        
+    <!-- footer -->
+    <footer>
+    </footer>
+  </body>
+</html>
